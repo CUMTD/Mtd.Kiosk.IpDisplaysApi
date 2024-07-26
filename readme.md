@@ -4,7 +4,7 @@
 [![CodeQL](https://github.com/CUMTD/Mtd.Led.Soap/actions/workflows/codeql.yml/badge.svg)](https://github.com/CUMTD/Mtd.Led.Soap/actions/workflows/codeql.yml)
 ![GitHub Release](https://img.shields.io/github/v/release/cumtd/Mtd.Led.Soap?sort=semver&style=flat&logo=nuget&color=34D058&cacheSeconds=300)
 
-FOr interfacing with Kiosk LED signs.
+For interfacing with Kiosk LED signs.
 
 ## GitHub NuGet Feed
 
