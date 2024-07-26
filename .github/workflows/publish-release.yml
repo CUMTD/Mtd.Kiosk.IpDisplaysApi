@@ -6,12 +6,12 @@ on:
       - 'v[0-9]+.[0-9]+.[0-9]+'
 
 env:
-  PACKAGE_ID: 'Mtd.Led.Soap'
+  PACKAGE_ID: 'Mtd.Kiosk.IpDisplaysApi'
   COPYRIGHT: 'Champaign-Urbana Mass Transit District'
   LICENSE: 'Apache-2.0'
   ICON: 'icon.png'
   README: 'readme.md'
-  REPO: 'git@github.com:CUMTD/Mtd.Led.Soap.git'
+  REPO: 'git@github.com:CUMTD/Mtd.Kiosk.IpDisplaysApi.git'
   DESCRIPTION: 'MTD'
   OUTPUT: 'nupkgs'
   TAG_NAME: ${{ github.event.release.tag_name }}

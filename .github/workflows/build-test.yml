@@ -11,7 +11,7 @@ on:
     branches: ['main']
 
 env:
-    PROJECT: Mtd.Led.Soap
+    PROJECT: Mtd.Kiosk.IpDisplaysApi
 
 jobs:
   build:
