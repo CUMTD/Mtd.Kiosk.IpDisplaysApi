@@ -5,8 +5,6 @@ VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mtd.Led.Soap", "Mtd.Led.Soap.csproj", "{78655CC6-320A-4225-8F1A-06CCBEC78A3D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestScreenshot", "..\TestScreenshot\TestScreenshot.csproj", "{F4C00156-89EA-4601-A2AA-4C22A6470DD4}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,10 +15,6 @@ Global
 		{78655CC6-320A-4225-8F1A-06CCBEC78A3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{78655CC6-320A-4225-8F1A-06CCBEC78A3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{78655CC6-320A-4225-8F1A-06CCBEC78A3D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F4C00156-89EA-4601-A2AA-4C22A6470DD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F4C00156-89EA-4601-A2AA-4C22A6470DD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F4C00156-89EA-4601-A2AA-4C22A6470DD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F4C00156-89EA-4601-A2AA-4C22A6470DD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
