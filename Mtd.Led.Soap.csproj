@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>net8.0</TargetFramework>
+		<AnalysisLevel>latest</AnalysisLevel>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<None Include=".\icon.png" Pack="true" PackagePath="\" />
+		<None Include=".\readme.md" Pack="true" PackagePath="\" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<None Include=".\.github\*" Pack="false" />
+		<None Include=".\.github\workflows\*" Pack="false" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <PackageReference Include="System.ServiceModel.Duplex" />
+	  <PackageReference Include="System.ServiceModel.Federation" />
+	  <PackageReference Include="System.ServiceModel.Http" />
+	  <PackageReference Include="System.ServiceModel.NetTcp" />
+	  <PackageReference Include="System.ServiceModel.Security" />
+	</ItemGroup>
+
+</Project>

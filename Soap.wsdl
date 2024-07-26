@@ -1,0 +1,1159 @@
+<?xml version='1.0' encoding='UTF-8' ?> 
+ <!-- Generated 05/24/13 by Microsoft SOAP Toolkit WSDL File Generator, Version VER_PRODBUILD_MAJOR.VER_PRODBUILD_MINOR.VER_PRODBUILD_BUILD.VER_PRODBUILD_QFE --> 
+<definitions  name ='Soap1'   targetNamespace = 'http://tempuri.org/wsdl/'
+	 xmlns:wsdlns='http://tempuri.org/wsdl/' 
+	 xmlns:typens='http://tempuri.org/type' 
+	 xmlns:soap='http://schemas.xmlsoap.org/wsdl/soap/' 
+	 xmlns:xsd='http://www.w3.org/2001/XMLSchema' 
+	 xmlns:stk='http://schemas.microsoft.com/soap-toolkit/wsdl-extension'
+	 xmlns='http://schemas.xmlsoap.org/wsdl/'> 
+  <types>
+    <schema targetNamespace='http://tempuri.org/type'
+      xmlns='http://www.w3.org/2001/XMLSchema'
+      xmlns:SOAP-ENC='http://schemas.xmlsoap.org/soap/encoding/'
+      xmlns:wsdl='http://schemas.xmlsoap.org/wsdl/'
+      elementFormDefault='qualified'>
+    </schema>
+  </types>
+  <message name='SignSvr.SetLayoutState'>
+    <part name='layoutName' type='xsd:string'/>
+    <part name='EnabledState' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.SetLayoutStateResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.SetMessageState'>
+    <part name='targetId' type='xsd:int'/>
+    <part name='orderId' type='xsd:int'/>
+    <part name='EnabledState' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.SetMessageStateResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetConditions'>
+  </message>
+  <message name='SignSvr.GetConditionsResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='conditionInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetConditionByName'>
+    <part name='conditionName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetConditionByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='conditionInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetConditionByID'>
+    <part name='conditionId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetConditionByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='conditionInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveConditionByName'>
+    <part name='conditionName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveConditionByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveConditionByID'>
+    <part name='conditionId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveConditionByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.AddUpdateCondition'>
+    <part name='conditionXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.AddUpdateConditionResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetThresholds'>
+    <part name='returnSetPointInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetThresholdsResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='thresholdInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetThresholdByName'>
+    <part name='thresholdName' type='xsd:string'/>
+    <part name='returnSetPointInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetThresholdByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='thresholdInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetThresholdByID'>
+    <part name='thresholdId' type='xsd:int'/>
+    <part name='returnSetPointInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetThresholdByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='thresholdInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveThresholdByName'>
+    <part name='thresholdName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveThresholdByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveThresholdByID'>
+    <part name='thresholdId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveThresholdByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.AddUpdateThreshold'>
+    <part name='thresholdXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.AddUpdateThresholdResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetMessages'>
+    <part name='targetId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetMessagesResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='messageInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetMessageByTargetOrder'>
+    <part name='targetId' type='xsd:int'/>
+    <part name='orderId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetMessageByTargetOrderResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='messageInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetMessageByID'>
+    <part name='messageId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetMessageByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='messageInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveMessageByTargetOrder'>
+    <part name='targetId' type='xsd:int'/>
+    <part name='orderId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveMessageByTargetOrderResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveMessageByID'>
+    <part name='messageId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveMessageByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.AddUpdateMessage'>
+    <part name='messageXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.AddUpdateMessageResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetImages'>
+  </message>
+  <message name='SignSvr.GetImagesResponse'>
+    <part name='imagesXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.DeleteImage'>
+    <part name='imageName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.DeleteImageResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.UploadImage'>
+    <part name='imageName' type='xsd:string'/>
+    <part name='base64Image' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.UploadImageResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.UpdateSignInfo2'>
+    <part name='infoId' type='xsd:int'/>
+    <part name='infoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.UpdateSignInfo2Response'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetSignInfo2'>
+    <part name='infoId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetSignInfo2Response'>
+    <part name='Result' type='xsd:int'/>
+    <part name='infoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetSignInfo'>
+  </message>
+  <message name='SignSvr.GetSignInfoResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='signInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetDateTime'>
+  </message>
+  <message name='SignSvr.GetDateTimeResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='dateTimeText' type='xsd:dateTime'/>
+  </message>
+  <message name='SignSvr.SetDateTime'>
+    <part name='dateTimeText' type='xsd:dateTime'/>
+  </message>
+  <message name='SignSvr.SetDateTimeResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetScreenSnapshot'>
+  </message>
+  <message name='SignSvr.GetScreenSnapshotResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='fileName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.SendCommand'>
+    <part name='commandID' type='xsd:int'/>
+    <part name='commandText' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.SendCommandResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.SendCommand2'>
+    <part name='commandID' type='xsd:int'/>
+    <part name='commandText' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.SendCommand2Response'>
+    <part name='Result' type='xsd:int'/>
+    <part name='retInfo' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetDataItems'>
+    <part name='request' type='xsd:string'/>
+    <part name='returnDataInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetDataItemsResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='dataItemInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetDataItemByName'>
+    <part name='dataItemName' type='xsd:string'/>
+    <part name='returnDataInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetDataItemByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='dataItemInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetDataItemByID'>
+    <part name='dataItemId' type='xsd:int'/>
+    <part name='returnDataInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetDataItemByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='dataItemInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.UpdateDataItemValues'>
+    <part name='dataItemValuesXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.UpdateDataItemValuesResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.UpdateDataItemValueByName'>
+    <part name='dataItemName' type='xsd:string'/>
+    <part name='dataItemValue' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.UpdateDataItemValueByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.UpdateDataItemValueByID'>
+    <part name='dataItemId' type='xsd:int'/>
+    <part name='dataItemValue' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.UpdateDataItemValueByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveDataItemByName'>
+    <part name='dataItemName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveDataItemByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveDataItemByID'>
+    <part name='dataItemId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveDataItemByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.AddUpdateDataItem'>
+    <part name='dataItemXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.AddUpdateDataItemResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetZoneByName'>
+    <part name='layoutName' type='xsd:string'/>
+    <part name='zoneName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetZoneByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='zoneInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetZoneByID'>
+    <part name='zoneId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetZoneByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='zoneInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveZoneByName'>
+    <part name='layoutName' type='xsd:string'/>
+    <part name='zoneName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveZoneByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveZoneByID'>
+    <part name='zoneId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveZoneByIDResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.AddUpdateZone'>
+    <part name='zoneXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.AddUpdateZoneResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetLayoutParentID'>
+    <part name='layoutName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetLayoutParentIDResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='parentId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetLayoutByName'>
+    <part name='layoutName' type='xsd:string'/>
+    <part name='returnZoneInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetLayoutByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='layoutInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetLayoutById'>
+    <part name='layoutId' type='xsd:int'/>
+    <part name='returnZoneInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetLayoutByIdResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='layoutInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.GetLayouts'>
+    <part name='returnZoneInfo' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.GetLayoutsResponse'>
+    <part name='Result' type='xsd:int'/>
+    <part name='layoutInfoXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveLayoutByName'>
+    <part name='layoutName' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.RemoveLayoutByNameResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveLayoutById'>
+    <part name='layoutId' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.RemoveLayoutByIdResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <message name='SignSvr.AddUpdateLayout'>
+    <part name='layoutXml' type='xsd:string'/>
+  </message>
+  <message name='SignSvr.AddUpdateLayoutResponse'>
+    <part name='Result' type='xsd:int'/>
+  </message>
+  <portType name='SignSvrSoapPort'>
+    <operation name='SetLayoutState' parameterOrder='layoutName EnabledState'>
+      <input message='wsdlns:SignSvr.SetLayoutState' />
+      <output message='wsdlns:SignSvr.SetLayoutStateResponse' />
+    </operation>
+    <operation name='SetMessageState' parameterOrder='targetId orderId EnabledState'>
+      <input message='wsdlns:SignSvr.SetMessageState' />
+      <output message='wsdlns:SignSvr.SetMessageStateResponse' />
+    </operation>
+    <operation name='GetConditions' parameterOrder='conditionInfoXml'>
+      <input message='wsdlns:SignSvr.GetConditions' />
+      <output message='wsdlns:SignSvr.GetConditionsResponse' />
+    </operation>
+    <operation name='GetConditionByName' parameterOrder='conditionName conditionInfoXml'>
+      <input message='wsdlns:SignSvr.GetConditionByName' />
+      <output message='wsdlns:SignSvr.GetConditionByNameResponse' />
+    </operation>
+    <operation name='GetConditionByID' parameterOrder='conditionId conditionInfoXml'>
+      <input message='wsdlns:SignSvr.GetConditionByID' />
+      <output message='wsdlns:SignSvr.GetConditionByIDResponse' />
+    </operation>
+    <operation name='RemoveConditionByName' parameterOrder='conditionName'>
+      <input message='wsdlns:SignSvr.RemoveConditionByName' />
+      <output message='wsdlns:SignSvr.RemoveConditionByNameResponse' />
+    </operation>
+    <operation name='RemoveConditionByID' parameterOrder='conditionId'>
+      <input message='wsdlns:SignSvr.RemoveConditionByID' />
+      <output message='wsdlns:SignSvr.RemoveConditionByIDResponse' />
+    </operation>
+    <operation name='AddUpdateCondition' parameterOrder='conditionXml'>
+      <input message='wsdlns:SignSvr.AddUpdateCondition' />
+      <output message='wsdlns:SignSvr.AddUpdateConditionResponse' />
+    </operation>
+    <operation name='GetThresholds' parameterOrder='thresholdInfoXml returnSetPointInfo'>
+      <input message='wsdlns:SignSvr.GetThresholds' />
+      <output message='wsdlns:SignSvr.GetThresholdsResponse' />
+    </operation>
+    <operation name='GetThresholdByName' parameterOrder='thresholdName thresholdInfoXml returnSetPointInfo'>
+      <input message='wsdlns:SignSvr.GetThresholdByName' />
+      <output message='wsdlns:SignSvr.GetThresholdByNameResponse' />
+    </operation>
+    <operation name='GetThresholdByID' parameterOrder='thresholdId thresholdInfoXml returnSetPointInfo'>
+      <input message='wsdlns:SignSvr.GetThresholdByID' />
+      <output message='wsdlns:SignSvr.GetThresholdByIDResponse' />
+    </operation>
+    <operation name='RemoveThresholdByName' parameterOrder='thresholdName'>
+      <input message='wsdlns:SignSvr.RemoveThresholdByName' />
+      <output message='wsdlns:SignSvr.RemoveThresholdByNameResponse' />
+    </operation>
+    <operation name='RemoveThresholdByID' parameterOrder='thresholdId'>
+      <input message='wsdlns:SignSvr.RemoveThresholdByID' />
+      <output message='wsdlns:SignSvr.RemoveThresholdByIDResponse' />
+    </operation>
+    <operation name='AddUpdateThreshold' parameterOrder='thresholdXml'>
+      <input message='wsdlns:SignSvr.AddUpdateThreshold' />
+      <output message='wsdlns:SignSvr.AddUpdateThresholdResponse' />
+    </operation>
+    <operation name='GetMessages' parameterOrder='targetId messageInfoXml'>
+      <input message='wsdlns:SignSvr.GetMessages' />
+      <output message='wsdlns:SignSvr.GetMessagesResponse' />
+    </operation>
+    <operation name='GetMessageByTargetOrder' parameterOrder='targetId orderId messageInfoXml'>
+      <input message='wsdlns:SignSvr.GetMessageByTargetOrder' />
+      <output message='wsdlns:SignSvr.GetMessageByTargetOrderResponse' />
+    </operation>
+    <operation name='GetMessageByID' parameterOrder='messageId messageInfoXml'>
+      <input message='wsdlns:SignSvr.GetMessageByID' />
+      <output message='wsdlns:SignSvr.GetMessageByIDResponse' />
+    </operation>
+    <operation name='RemoveMessageByTargetOrder' parameterOrder='targetId orderId'>
+      <input message='wsdlns:SignSvr.RemoveMessageByTargetOrder' />
+      <output message='wsdlns:SignSvr.RemoveMessageByTargetOrderResponse' />
+    </operation>
+    <operation name='RemoveMessageByID' parameterOrder='messageId'>
+      <input message='wsdlns:SignSvr.RemoveMessageByID' />
+      <output message='wsdlns:SignSvr.RemoveMessageByIDResponse' />
+    </operation>
+    <operation name='AddUpdateMessage' parameterOrder='messageXml'>
+      <input message='wsdlns:SignSvr.AddUpdateMessage' />
+      <output message='wsdlns:SignSvr.AddUpdateMessageResponse' />
+    </operation>
+    <operation name='GetImages' parameterOrder='imagesXml'>
+      <input message='wsdlns:SignSvr.GetImages' />
+      <output message='wsdlns:SignSvr.GetImagesResponse' />
+    </operation>
+    <operation name='DeleteImage' parameterOrder='imageName'>
+      <input message='wsdlns:SignSvr.DeleteImage' />
+      <output message='wsdlns:SignSvr.DeleteImageResponse' />
+    </operation>
+    <operation name='UploadImage' parameterOrder='imageName base64Image'>
+      <input message='wsdlns:SignSvr.UploadImage' />
+      <output message='wsdlns:SignSvr.UploadImageResponse' />
+    </operation>
+    <operation name='UpdateSignInfo2' parameterOrder='infoId infoXml'>
+      <input message='wsdlns:SignSvr.UpdateSignInfo2' />
+      <output message='wsdlns:SignSvr.UpdateSignInfo2Response' />
+    </operation>
+    <operation name='GetSignInfo2' parameterOrder='infoId infoXml'>
+      <input message='wsdlns:SignSvr.GetSignInfo2' />
+      <output message='wsdlns:SignSvr.GetSignInfo2Response' />
+    </operation>
+    <operation name='GetSignInfo' parameterOrder='signInfoXml'>
+      <input message='wsdlns:SignSvr.GetSignInfo' />
+      <output message='wsdlns:SignSvr.GetSignInfoResponse' />
+    </operation>
+    <operation name='GetDateTime' parameterOrder='dateTimeText'>
+      <input message='wsdlns:SignSvr.GetDateTime' />
+      <output message='wsdlns:SignSvr.GetDateTimeResponse' />
+    </operation>
+    <operation name='SetDateTime' parameterOrder='dateTimeText'>
+      <input message='wsdlns:SignSvr.SetDateTime' />
+      <output message='wsdlns:SignSvr.SetDateTimeResponse' />
+    </operation>
+    <operation name='GetScreenSnapshot' parameterOrder='fileName'>
+      <input message='wsdlns:SignSvr.GetScreenSnapshot' />
+      <output message='wsdlns:SignSvr.GetScreenSnapshotResponse' />
+    </operation>
+    <operation name='SendCommand' parameterOrder='commandID commandText'>
+      <input message='wsdlns:SignSvr.SendCommand' />
+      <output message='wsdlns:SignSvr.SendCommandResponse' />
+    </operation>
+    <operation name='SendCommand2' parameterOrder='commandID commandText retInfo'>
+      <input message='wsdlns:SignSvr.SendCommand2' />
+      <output message='wsdlns:SignSvr.SendCommand2Response' />
+    </operation>
+    <operation name='GetDataItems' parameterOrder='request dataItemInfoXml returnDataInfo'>
+      <input message='wsdlns:SignSvr.GetDataItems' />
+      <output message='wsdlns:SignSvr.GetDataItemsResponse' />
+    </operation>
+    <operation name='GetDataItemByName' parameterOrder='dataItemName dataItemInfoXml returnDataInfo'>
+      <input message='wsdlns:SignSvr.GetDataItemByName' />
+      <output message='wsdlns:SignSvr.GetDataItemByNameResponse' />
+    </operation>
+    <operation name='GetDataItemByID' parameterOrder='dataItemId dataItemInfoXml returnDataInfo'>
+      <input message='wsdlns:SignSvr.GetDataItemByID' />
+      <output message='wsdlns:SignSvr.GetDataItemByIDResponse' />
+    </operation>
+    <operation name='UpdateDataItemValues' parameterOrder='dataItemValuesXml'>
+      <input message='wsdlns:SignSvr.UpdateDataItemValues' />
+      <output message='wsdlns:SignSvr.UpdateDataItemValuesResponse' />
+    </operation>
+    <operation name='UpdateDataItemValueByName' parameterOrder='dataItemName dataItemValue'>
+      <input message='wsdlns:SignSvr.UpdateDataItemValueByName' />
+      <output message='wsdlns:SignSvr.UpdateDataItemValueByNameResponse' />
+    </operation>
+    <operation name='UpdateDataItemValueByID' parameterOrder='dataItemId dataItemValue'>
+      <input message='wsdlns:SignSvr.UpdateDataItemValueByID' />
+      <output message='wsdlns:SignSvr.UpdateDataItemValueByIDResponse' />
+    </operation>
+    <operation name='RemoveDataItemByName' parameterOrder='dataItemName'>
+      <input message='wsdlns:SignSvr.RemoveDataItemByName' />
+      <output message='wsdlns:SignSvr.RemoveDataItemByNameResponse' />
+    </operation>
+    <operation name='RemoveDataItemByID' parameterOrder='dataItemId'>
+      <input message='wsdlns:SignSvr.RemoveDataItemByID' />
+      <output message='wsdlns:SignSvr.RemoveDataItemByIDResponse' />
+    </operation>
+    <operation name='AddUpdateDataItem' parameterOrder='dataItemXml'>
+      <input message='wsdlns:SignSvr.AddUpdateDataItem' />
+      <output message='wsdlns:SignSvr.AddUpdateDataItemResponse' />
+    </operation>
+    <operation name='GetZoneByName' parameterOrder='layoutName zoneName zoneInfoXml'>
+      <input message='wsdlns:SignSvr.GetZoneByName' />
+      <output message='wsdlns:SignSvr.GetZoneByNameResponse' />
+    </operation>
+    <operation name='GetZoneByID' parameterOrder='zoneId zoneInfoXml'>
+      <input message='wsdlns:SignSvr.GetZoneByID' />
+      <output message='wsdlns:SignSvr.GetZoneByIDResponse' />
+    </operation>
+    <operation name='RemoveZoneByName' parameterOrder='layoutName zoneName'>
+      <input message='wsdlns:SignSvr.RemoveZoneByName' />
+      <output message='wsdlns:SignSvr.RemoveZoneByNameResponse' />
+    </operation>
+    <operation name='RemoveZoneByID' parameterOrder='zoneId'>
+      <input message='wsdlns:SignSvr.RemoveZoneByID' />
+      <output message='wsdlns:SignSvr.RemoveZoneByIDResponse' />
+    </operation>
+    <operation name='AddUpdateZone' parameterOrder='zoneXml'>
+      <input message='wsdlns:SignSvr.AddUpdateZone' />
+      <output message='wsdlns:SignSvr.AddUpdateZoneResponse' />
+    </operation>
+    <operation name='GetLayoutParentID' parameterOrder='layoutName parentId'>
+      <input message='wsdlns:SignSvr.GetLayoutParentID' />
+      <output message='wsdlns:SignSvr.GetLayoutParentIDResponse' />
+    </operation>
+    <operation name='GetLayoutByName' parameterOrder='layoutName layoutInfoXml returnZoneInfo'>
+      <input message='wsdlns:SignSvr.GetLayoutByName' />
+      <output message='wsdlns:SignSvr.GetLayoutByNameResponse' />
+    </operation>
+    <operation name='GetLayoutById' parameterOrder='layoutId layoutInfoXml returnZoneInfo'>
+      <input message='wsdlns:SignSvr.GetLayoutById' />
+      <output message='wsdlns:SignSvr.GetLayoutByIdResponse' />
+    </operation>
+    <operation name='GetLayouts' parameterOrder='layoutInfoXml returnZoneInfo'>
+      <input message='wsdlns:SignSvr.GetLayouts' />
+      <output message='wsdlns:SignSvr.GetLayoutsResponse' />
+    </operation>
+    <operation name='RemoveLayoutByName' parameterOrder='layoutName'>
+      <input message='wsdlns:SignSvr.RemoveLayoutByName' />
+      <output message='wsdlns:SignSvr.RemoveLayoutByNameResponse' />
+    </operation>
+    <operation name='RemoveLayoutById' parameterOrder='layoutId'>
+      <input message='wsdlns:SignSvr.RemoveLayoutById' />
+      <output message='wsdlns:SignSvr.RemoveLayoutByIdResponse' />
+    </operation>
+    <operation name='AddUpdateLayout' parameterOrder='layoutXml'>
+      <input message='wsdlns:SignSvr.AddUpdateLayout' />
+      <output message='wsdlns:SignSvr.AddUpdateLayoutResponse' />
+    </operation>
+  </portType>
+  <binding name='SignSvrSoapBinding' type='wsdlns:SignSvrSoapPort' >
+    <stk:binding preferredEncoding='UTF-8'/>
+    <soap:binding style='rpc' transport='http://schemas.xmlsoap.org/soap/http' />
+    <operation name='SetLayoutState' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.SetLayoutState' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='SetMessageState' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.SetMessageState' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetConditions' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetConditions' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetConditionByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetConditionByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetConditionByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetConditionByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveConditionByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveConditionByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveConditionByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveConditionByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='AddUpdateCondition' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.AddUpdateCondition' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetThresholds' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetThresholds' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetThresholdByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetThresholdByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetThresholdByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetThresholdByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveThresholdByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveThresholdByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveThresholdByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveThresholdByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='AddUpdateThreshold' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.AddUpdateThreshold' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetMessages' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetMessages' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetMessageByTargetOrder' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetMessageByTargetOrder' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetMessageByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetMessageByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveMessageByTargetOrder' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveMessageByTargetOrder' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveMessageByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveMessageByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='AddUpdateMessage' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.AddUpdateMessage' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetImages' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetImages' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='DeleteImage' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.DeleteImage' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='UploadImage' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.UploadImage' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='UpdateSignInfo2' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.UpdateSignInfo2' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetSignInfo2' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetSignInfo2' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetSignInfo' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetSignInfo' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetDateTime' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetDateTime' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='SetDateTime' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.SetDateTime' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetScreenSnapshot' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetScreenSnapshot' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='SendCommand' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.SendCommand' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='SendCommand2' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.SendCommand2' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetDataItems' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetDataItems' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetDataItemByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetDataItemByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetDataItemByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetDataItemByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='UpdateDataItemValues' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.UpdateDataItemValues' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='UpdateDataItemValueByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.UpdateDataItemValueByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='UpdateDataItemValueByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.UpdateDataItemValueByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveDataItemByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveDataItemByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveDataItemByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveDataItemByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='AddUpdateDataItem' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.AddUpdateDataItem' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetZoneByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetZoneByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetZoneByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetZoneByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveZoneByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveZoneByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveZoneByID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveZoneByID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='AddUpdateZone' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.AddUpdateZone' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetLayoutParentID' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetLayoutParentID' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetLayoutByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetLayoutByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetLayoutById' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetLayoutById' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='GetLayouts' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.GetLayouts' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveLayoutByName' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveLayoutByName' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='RemoveLayoutById' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.RemoveLayoutById' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+    <operation name='AddUpdateLayout' >
+      <soap:operation soapAction='http://tempuri.org/action/SignSvr.AddUpdateLayout' />
+      <input>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </input>
+      <output>
+        <soap:body use='encoded' namespace='http://tempuri.org/message/'
+		  encodingStyle='http://schemas.xmlsoap.org/soap/encoding/' />
+      </output>
+    </operation>
+  </binding>
+  <service name='Soap1' >
+    <port name='SignSvrSoapPort' binding='wsdlns:SignSvrSoapBinding' >
+      <soap:address location='http://192.168.1.85/Soap1.wsdl' />
+    </port>
+  </service>
+</definitions>
