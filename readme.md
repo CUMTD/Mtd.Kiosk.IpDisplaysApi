@@ -1,4 +1,4 @@
-# Mtd.Led.Soap
+# Mtd.Led.IpDisplaysApi
 
 [![.NET Build and Test](https://github.com/CUMTD/Mtd.Led.Soap/actions/workflows/build-test.yml/badge.svg)](https://github.com/CUMTD/Mtd.Led.Soap/actions/workflows/build-test.yml)
 [![CodeQL](https://github.com/CUMTD/Mtd.Led.Soap/actions/workflows/codeql.yml/badge.svg)](https://github.com/CUMTD/Mtd.Led.Soap/actions/workflows/codeql.yml)
