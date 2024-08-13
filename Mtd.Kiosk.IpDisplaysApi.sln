@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34728.123
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mtd.Led.Soap", "Mtd.Led.Soap.csproj", "{78655CC6-320A-4225-8F1A-06CCBEC78A3D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Mtd.Kiosk.IpDisplaysApi", "Mtd.Kiosk.IpDisplaysApi.csproj", "{78655CC6-320A-4225-8F1A-06CCBEC78A3D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
