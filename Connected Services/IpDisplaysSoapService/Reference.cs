@@ -7,3006 +7,3006 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace IpDisplaysSoapService
+namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi
 {
-    
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.ServiceContractAttribute(Namespace="http://tempuri.org/wsdl/", ConfigurationName="IpDisplaysSoapService.SignSvrSoapPort")]
-    public interface SignSvrSoapPort
-    {
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.SetLayoutState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SetLayoutStateResponse> SetLayoutStateAsync(IpDisplaysSoapService.SetLayoutStateRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.SetMessageState", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SetMessageStateResponse> SetMessageStateAsync(IpDisplaysSoapService.SetMessageStateRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetConditions", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetConditionsResponse> GetConditionsAsync(IpDisplaysSoapService.GetConditionsRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetConditionByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetConditionByNameResponse> GetConditionByNameAsync(IpDisplaysSoapService.GetConditionByNameRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetConditionByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetConditionByIDResponse> GetConditionByIDAsync(IpDisplaysSoapService.GetConditionByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveConditionByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveConditionByNameResponse> RemoveConditionByNameAsync(IpDisplaysSoapService.RemoveConditionByNameRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveConditionByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveConditionByIDResponse> RemoveConditionByIDAsync(IpDisplaysSoapService.RemoveConditionByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.AddUpdateCondition", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateConditionResponse> AddUpdateConditionAsync(IpDisplaysSoapService.AddUpdateConditionRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetThresholds", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetThresholdsResponse> GetThresholdsAsync(IpDisplaysSoapService.GetThresholdsRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetThresholdByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetThresholdByNameResponse> GetThresholdByNameAsync(IpDisplaysSoapService.GetThresholdByNameRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetThresholdByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetThresholdByIDResponse> GetThresholdByIDAsync(IpDisplaysSoapService.GetThresholdByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveThresholdByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveThresholdByNameResponse> RemoveThresholdByNameAsync(IpDisplaysSoapService.RemoveThresholdByNameRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveThresholdByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveThresholdByIDResponse> RemoveThresholdByIDAsync(IpDisplaysSoapService.RemoveThresholdByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.AddUpdateThreshold", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateThresholdResponse> AddUpdateThresholdAsync(IpDisplaysSoapService.AddUpdateThresholdRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetMessages", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetMessagesResponse> GetMessagesAsync(IpDisplaysSoapService.GetMessagesRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetMessageByTargetOrder", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetMessageByTargetOrderResponse> GetMessageByTargetOrderAsync(IpDisplaysSoapService.GetMessageByTargetOrderRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetMessageByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetMessageByIDResponse> GetMessageByIDAsync(IpDisplaysSoapService.GetMessageByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveMessageByTargetOrder", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveMessageByTargetOrderResponse> RemoveMessageByTargetOrderAsync(IpDisplaysSoapService.RemoveMessageByTargetOrderRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveMessageByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveMessageByIDResponse> RemoveMessageByIDAsync(IpDisplaysSoapService.RemoveMessageByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.AddUpdateMessage", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateMessageResponse> AddUpdateMessageAsync(IpDisplaysSoapService.AddUpdateMessageRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetImages", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetImagesResponse> GetImagesAsync(IpDisplaysSoapService.GetImagesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.DeleteImage", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.DeleteImageResponse> DeleteImageAsync(IpDisplaysSoapService.DeleteImageRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.UploadImage", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UploadImageResponse> UploadImageAsync(IpDisplaysSoapService.UploadImageRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.UpdateSignInfo2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateSignInfo2Response> UpdateSignInfo2Async(IpDisplaysSoapService.UpdateSignInfo2Request request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetSignInfo2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetSignInfo2Response> GetSignInfo2Async(IpDisplaysSoapService.GetSignInfo2Request request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetSignInfo", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetSignInfoResponse> GetSignInfoAsync(IpDisplaysSoapService.GetSignInfoRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetDateTime", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetDateTimeResponse> GetDateTimeAsync(IpDisplaysSoapService.GetDateTimeRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.SetDateTime", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SetDateTimeResponse> SetDateTimeAsync(IpDisplaysSoapService.SetDateTimeRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetScreenSnapshot", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetScreenSnapshotResponse> GetScreenSnapshotAsync(IpDisplaysSoapService.GetScreenSnapshotRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.SendCommand", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SendCommandResponse> SendCommandAsync(IpDisplaysSoapService.SendCommandRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.SendCommand2", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SendCommand2Response> SendCommand2Async(IpDisplaysSoapService.SendCommand2Request request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetDataItems", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetDataItemsResponse> GetDataItemsAsync(IpDisplaysSoapService.GetDataItemsRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetDataItemByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetDataItemByNameResponse> GetDataItemByNameAsync(IpDisplaysSoapService.GetDataItemByNameRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetDataItemByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetDataItemByIDResponse> GetDataItemByIDAsync(IpDisplaysSoapService.GetDataItemByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.UpdateDataItemValues", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValuesResponse> UpdateDataItemValuesAsync(IpDisplaysSoapService.UpdateDataItemValuesRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.UpdateDataItemValueByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValueByNameResponse> UpdateDataItemValueByNameAsync(IpDisplaysSoapService.UpdateDataItemValueByNameRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.UpdateDataItemValueByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValueByIDResponse> UpdateDataItemValueByIDAsync(IpDisplaysSoapService.UpdateDataItemValueByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveDataItemByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveDataItemByNameResponse> RemoveDataItemByNameAsync(IpDisplaysSoapService.RemoveDataItemByNameRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveDataItemByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveDataItemByIDResponse> RemoveDataItemByIDAsync(IpDisplaysSoapService.RemoveDataItemByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.AddUpdateDataItem", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateDataItemResponse> AddUpdateDataItemAsync(IpDisplaysSoapService.AddUpdateDataItemRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetZoneByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetZoneByNameResponse> GetZoneByNameAsync(IpDisplaysSoapService.GetZoneByNameRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetZoneByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetZoneByIDResponse> GetZoneByIDAsync(IpDisplaysSoapService.GetZoneByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveZoneByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveZoneByNameResponse> RemoveZoneByNameAsync(IpDisplaysSoapService.RemoveZoneByNameRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveZoneByID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveZoneByIDResponse> RemoveZoneByIDAsync(IpDisplaysSoapService.RemoveZoneByIDRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.AddUpdateZone", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateZoneResponse> AddUpdateZoneAsync(IpDisplaysSoapService.AddUpdateZoneRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetLayoutParentID", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutParentIDResponse> GetLayoutParentIDAsync(IpDisplaysSoapService.GetLayoutParentIDRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetLayoutByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutByNameResponse> GetLayoutByNameAsync(IpDisplaysSoapService.GetLayoutByNameRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetLayoutById", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutByIdResponse> GetLayoutByIdAsync(IpDisplaysSoapService.GetLayoutByIdRequest request);
-        
-        // CODEGEN: Generating message contract since the operation has multiple return values.
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.GetLayouts", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutsResponse> GetLayoutsAsync(IpDisplaysSoapService.GetLayoutsRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveLayoutByName", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveLayoutByNameResponse> RemoveLayoutByNameAsync(IpDisplaysSoapService.RemoveLayoutByNameRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.RemoveLayoutById", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveLayoutByIdResponse> RemoveLayoutByIdAsync(IpDisplaysSoapService.RemoveLayoutByIdRequest request);
-        
-        [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/action/SignSvr.AddUpdateLayout", ReplyAction="*")]
-        [System.ServiceModel.XmlSerializerFormatAttribute(Style=System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults=true, Use=System.ServiceModel.OperationFormatUse.Encoded)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateLayoutResponse> AddUpdateLayoutAsync(IpDisplaysSoapService.AddUpdateLayoutRequest request);
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetLayoutState", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SetLayoutStateRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string layoutName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int EnabledState;
-        
-        public SetLayoutStateRequest()
-        {
-        }
-        
-        public SetLayoutStateRequest(string layoutName, int EnabledState)
-        {
-            this.layoutName = layoutName;
-            this.EnabledState = EnabledState;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetLayoutStateResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SetLayoutStateResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public SetLayoutStateResponse()
-        {
-        }
-        
-        public SetLayoutStateResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetMessageState", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SetMessageStateRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int targetId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int orderId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=2)]
-        public int EnabledState;
-        
-        public SetMessageStateRequest()
-        {
-        }
-        
-        public SetMessageStateRequest(int targetId, int orderId, int EnabledState)
-        {
-            this.targetId = targetId;
-            this.orderId = orderId;
-            this.EnabledState = EnabledState;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetMessageStateResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SetMessageStateResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public SetMessageStateResponse()
-        {
-        }
-        
-        public SetMessageStateResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConditions", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetConditionsRequest
-    {
-        
-        public GetConditionsRequest()
-        {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConditionsResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetConditionsResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string conditionInfoXml;
-        
-        public GetConditionsResponse()
-        {
-        }
-        
-        public GetConditionsResponse(int Result, string conditionInfoXml)
-        {
-            this.Result = Result;
-            this.conditionInfoXml = conditionInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConditionByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetConditionByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string conditionName;
-        
-        public GetConditionByNameRequest()
-        {
-        }
-        
-        public GetConditionByNameRequest(string conditionName)
-        {
-            this.conditionName = conditionName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConditionByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetConditionByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string conditionInfoXml;
-        
-        public GetConditionByNameResponse()
-        {
-        }
-        
-        public GetConditionByNameResponse(int Result, string conditionInfoXml)
-        {
-            this.Result = Result;
-            this.conditionInfoXml = conditionInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConditionByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetConditionByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int conditionId;
-        
-        public GetConditionByIDRequest()
-        {
-        }
-        
-        public GetConditionByIDRequest(int conditionId)
-        {
-            this.conditionId = conditionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetConditionByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetConditionByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string conditionInfoXml;
-        
-        public GetConditionByIDResponse()
-        {
-        }
-        
-        public GetConditionByIDResponse(int Result, string conditionInfoXml)
-        {
-            this.Result = Result;
-            this.conditionInfoXml = conditionInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveConditionByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveConditionByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string conditionName;
-        
-        public RemoveConditionByNameRequest()
-        {
-        }
-        
-        public RemoveConditionByNameRequest(string conditionName)
-        {
-            this.conditionName = conditionName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveConditionByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveConditionByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveConditionByNameResponse()
-        {
-        }
-        
-        public RemoveConditionByNameResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveConditionByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveConditionByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int conditionId;
-        
-        public RemoveConditionByIDRequest()
-        {
-        }
-        
-        public RemoveConditionByIDRequest(int conditionId)
-        {
-            this.conditionId = conditionId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveConditionByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveConditionByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveConditionByIDResponse()
-        {
-        }
-        
-        public RemoveConditionByIDResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateCondition", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateConditionRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string conditionXml;
-        
-        public AddUpdateConditionRequest()
-        {
-        }
-        
-        public AddUpdateConditionRequest(string conditionXml)
-        {
-            this.conditionXml = conditionXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateConditionResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateConditionResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public AddUpdateConditionResponse()
-        {
-        }
-        
-        public AddUpdateConditionResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetThresholds", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetThresholdsRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int returnSetPointInfo;
-        
-        public GetThresholdsRequest()
-        {
-        }
-        
-        public GetThresholdsRequest(int returnSetPointInfo)
-        {
-            this.returnSetPointInfo = returnSetPointInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetThresholdsResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetThresholdsResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string thresholdInfoXml;
-        
-        public GetThresholdsResponse()
-        {
-        }
-        
-        public GetThresholdsResponse(int Result, string thresholdInfoXml)
-        {
-            this.Result = Result;
-            this.thresholdInfoXml = thresholdInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetThresholdByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetThresholdByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string thresholdName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int returnSetPointInfo;
-        
-        public GetThresholdByNameRequest()
-        {
-        }
-        
-        public GetThresholdByNameRequest(string thresholdName, int returnSetPointInfo)
-        {
-            this.thresholdName = thresholdName;
-            this.returnSetPointInfo = returnSetPointInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetThresholdByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetThresholdByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string thresholdInfoXml;
-        
-        public GetThresholdByNameResponse()
-        {
-        }
-        
-        public GetThresholdByNameResponse(int Result, string thresholdInfoXml)
-        {
-            this.Result = Result;
-            this.thresholdInfoXml = thresholdInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetThresholdByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetThresholdByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int thresholdId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int returnSetPointInfo;
-        
-        public GetThresholdByIDRequest()
-        {
-        }
-        
-        public GetThresholdByIDRequest(int thresholdId, int returnSetPointInfo)
-        {
-            this.thresholdId = thresholdId;
-            this.returnSetPointInfo = returnSetPointInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetThresholdByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetThresholdByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string thresholdInfoXml;
-        
-        public GetThresholdByIDResponse()
-        {
-        }
-        
-        public GetThresholdByIDResponse(int Result, string thresholdInfoXml)
-        {
-            this.Result = Result;
-            this.thresholdInfoXml = thresholdInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveThresholdByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveThresholdByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string thresholdName;
-        
-        public RemoveThresholdByNameRequest()
-        {
-        }
-        
-        public RemoveThresholdByNameRequest(string thresholdName)
-        {
-            this.thresholdName = thresholdName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveThresholdByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveThresholdByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveThresholdByNameResponse()
-        {
-        }
-        
-        public RemoveThresholdByNameResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveThresholdByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveThresholdByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int thresholdId;
-        
-        public RemoveThresholdByIDRequest()
-        {
-        }
-        
-        public RemoveThresholdByIDRequest(int thresholdId)
-        {
-            this.thresholdId = thresholdId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveThresholdByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveThresholdByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveThresholdByIDResponse()
-        {
-        }
-        
-        public RemoveThresholdByIDResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateThreshold", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateThresholdRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string thresholdXml;
-        
-        public AddUpdateThresholdRequest()
-        {
-        }
-        
-        public AddUpdateThresholdRequest(string thresholdXml)
-        {
-            this.thresholdXml = thresholdXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateThresholdResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateThresholdResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public AddUpdateThresholdResponse()
-        {
-        }
-        
-        public AddUpdateThresholdResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMessages", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetMessagesRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int targetId;
-        
-        public GetMessagesRequest()
-        {
-        }
-        
-        public GetMessagesRequest(int targetId)
-        {
-            this.targetId = targetId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMessagesResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetMessagesResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string messageInfoXml;
-        
-        public GetMessagesResponse()
-        {
-        }
-        
-        public GetMessagesResponse(int Result, string messageInfoXml)
-        {
-            this.Result = Result;
-            this.messageInfoXml = messageInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMessageByTargetOrder", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetMessageByTargetOrderRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int targetId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int orderId;
-        
-        public GetMessageByTargetOrderRequest()
-        {
-        }
-        
-        public GetMessageByTargetOrderRequest(int targetId, int orderId)
-        {
-            this.targetId = targetId;
-            this.orderId = orderId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMessageByTargetOrderResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetMessageByTargetOrderResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string messageInfoXml;
-        
-        public GetMessageByTargetOrderResponse()
-        {
-        }
-        
-        public GetMessageByTargetOrderResponse(int Result, string messageInfoXml)
-        {
-            this.Result = Result;
-            this.messageInfoXml = messageInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMessageByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetMessageByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int messageId;
-        
-        public GetMessageByIDRequest()
-        {
-        }
-        
-        public GetMessageByIDRequest(int messageId)
-        {
-            this.messageId = messageId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetMessageByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetMessageByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string messageInfoXml;
-        
-        public GetMessageByIDResponse()
-        {
-        }
-        
-        public GetMessageByIDResponse(int Result, string messageInfoXml)
-        {
-            this.Result = Result;
-            this.messageInfoXml = messageInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveMessageByTargetOrder", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveMessageByTargetOrderRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int targetId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int orderId;
-        
-        public RemoveMessageByTargetOrderRequest()
-        {
-        }
-        
-        public RemoveMessageByTargetOrderRequest(int targetId, int orderId)
-        {
-            this.targetId = targetId;
-            this.orderId = orderId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveMessageByTargetOrderResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveMessageByTargetOrderResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveMessageByTargetOrderResponse()
-        {
-        }
-        
-        public RemoveMessageByTargetOrderResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveMessageByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveMessageByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int messageId;
-        
-        public RemoveMessageByIDRequest()
-        {
-        }
-        
-        public RemoveMessageByIDRequest(int messageId)
-        {
-            this.messageId = messageId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveMessageByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveMessageByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveMessageByIDResponse()
-        {
-        }
-        
-        public RemoveMessageByIDResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateMessage", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateMessageRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string messageXml;
-        
-        public AddUpdateMessageRequest()
-        {
-        }
-        
-        public AddUpdateMessageRequest(string messageXml)
-        {
-            this.messageXml = messageXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateMessageResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateMessageResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public AddUpdateMessageResponse()
-        {
-        }
-        
-        public AddUpdateMessageResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetImages", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetImagesRequest
-    {
-        
-        public GetImagesRequest()
-        {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetImagesResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetImagesResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string imagesXml;
-        
-        public GetImagesResponse()
-        {
-        }
-        
-        public GetImagesResponse(string imagesXml)
-        {
-            this.imagesXml = imagesXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteImage", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class DeleteImageRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string imageName;
-        
-        public DeleteImageRequest()
-        {
-        }
-        
-        public DeleteImageRequest(string imageName)
-        {
-            this.imageName = imageName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="DeleteImageResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class DeleteImageResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public DeleteImageResponse()
-        {
-        }
-        
-        public DeleteImageResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadImage", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UploadImageRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string imageName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string base64Image;
-        
-        public UploadImageRequest()
-        {
-        }
-        
-        public UploadImageRequest(string imageName, string base64Image)
-        {
-            this.imageName = imageName;
-            this.base64Image = base64Image;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UploadImageResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UploadImageResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public UploadImageResponse()
-        {
-        }
-        
-        public UploadImageResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateSignInfo2", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateSignInfo2Request
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int infoId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string infoXml;
-        
-        public UpdateSignInfo2Request()
-        {
-        }
-        
-        public UpdateSignInfo2Request(int infoId, string infoXml)
-        {
-            this.infoId = infoId;
-            this.infoXml = infoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateSignInfo2Response", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateSignInfo2Response
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public UpdateSignInfo2Response()
-        {
-        }
-        
-        public UpdateSignInfo2Response(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSignInfo2", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetSignInfo2Request
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int infoId;
-        
-        public GetSignInfo2Request()
-        {
-        }
-        
-        public GetSignInfo2Request(int infoId)
-        {
-            this.infoId = infoId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSignInfo2Response", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetSignInfo2Response
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string infoXml;
-        
-        public GetSignInfo2Response()
-        {
-        }
-        
-        public GetSignInfo2Response(int Result, string infoXml)
-        {
-            this.Result = Result;
-            this.infoXml = infoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSignInfo", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetSignInfoRequest
-    {
-        
-        public GetSignInfoRequest()
-        {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetSignInfoResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetSignInfoResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string signInfoXml;
-        
-        public GetSignInfoResponse()
-        {
-        }
-        
-        public GetSignInfoResponse(int Result, string signInfoXml)
-        {
-            this.Result = Result;
-            this.signInfoXml = signInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDateTime", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDateTimeRequest
-    {
-        
-        public GetDateTimeRequest()
-        {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDateTimeResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDateTimeResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public System.DateTime dateTimeText;
-        
-        public GetDateTimeResponse()
-        {
-        }
-        
-        public GetDateTimeResponse(int Result, System.DateTime dateTimeText)
-        {
-            this.Result = Result;
-            this.dateTimeText = dateTimeText;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDateTime", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SetDateTimeRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public System.DateTime dateTimeText;
-        
-        public SetDateTimeRequest()
-        {
-        }
-        
-        public SetDateTimeRequest(System.DateTime dateTimeText)
-        {
-            this.dateTimeText = dateTimeText;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SetDateTimeResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SetDateTimeResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public SetDateTimeResponse()
-        {
-        }
-        
-        public SetDateTimeResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScreenSnapshot", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetScreenSnapshotRequest
-    {
-        
-        public GetScreenSnapshotRequest()
-        {
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetScreenSnapshotResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetScreenSnapshotResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string fileName;
-        
-        public GetScreenSnapshotResponse()
-        {
-        }
-        
-        public GetScreenSnapshotResponse(int Result, string fileName)
-        {
-            this.Result = Result;
-            this.fileName = fileName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SendCommand", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SendCommandRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int commandID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string commandText;
-        
-        public SendCommandRequest()
-        {
-        }
-        
-        public SendCommandRequest(int commandID, string commandText)
-        {
-            this.commandID = commandID;
-            this.commandText = commandText;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SendCommandResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SendCommandResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public SendCommandResponse()
-        {
-        }
-        
-        public SendCommandResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SendCommand2", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SendCommand2Request
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int commandID;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string commandText;
-        
-        public SendCommand2Request()
-        {
-        }
-        
-        public SendCommand2Request(int commandID, string commandText)
-        {
-            this.commandID = commandID;
-            this.commandText = commandText;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="SendCommand2Response", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class SendCommand2Response
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string retInfo;
-        
-        public SendCommand2Response()
-        {
-        }
-        
-        public SendCommand2Response(int Result, string retInfo)
-        {
-            this.Result = Result;
-            this.retInfo = retInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDataItems", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDataItemsRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string request;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int returnDataInfo;
-        
-        public GetDataItemsRequest()
-        {
-        }
-        
-        public GetDataItemsRequest(string request, int returnDataInfo)
-        {
-            this.request = request;
-            this.returnDataInfo = returnDataInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDataItemsResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDataItemsResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string dataItemInfoXml;
-        
-        public GetDataItemsResponse()
-        {
-        }
-        
-        public GetDataItemsResponse(int Result, string dataItemInfoXml)
-        {
-            this.Result = Result;
-            this.dataItemInfoXml = dataItemInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDataItemByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDataItemByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string dataItemName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int returnDataInfo;
-        
-        public GetDataItemByNameRequest()
-        {
-        }
-        
-        public GetDataItemByNameRequest(string dataItemName, int returnDataInfo)
-        {
-            this.dataItemName = dataItemName;
-            this.returnDataInfo = returnDataInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDataItemByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDataItemByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string dataItemInfoXml;
-        
-        public GetDataItemByNameResponse()
-        {
-        }
-        
-        public GetDataItemByNameResponse(int Result, string dataItemInfoXml)
-        {
-            this.Result = Result;
-            this.dataItemInfoXml = dataItemInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDataItemByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDataItemByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int dataItemId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int returnDataInfo;
-        
-        public GetDataItemByIDRequest()
-        {
-        }
-        
-        public GetDataItemByIDRequest(int dataItemId, int returnDataInfo)
-        {
-            this.dataItemId = dataItemId;
-            this.returnDataInfo = returnDataInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetDataItemByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetDataItemByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string dataItemInfoXml;
-        
-        public GetDataItemByIDResponse()
-        {
-        }
-        
-        public GetDataItemByIDResponse(int Result, string dataItemInfoXml)
-        {
-            this.Result = Result;
-            this.dataItemInfoXml = dataItemInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateDataItemValues", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateDataItemValuesRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string dataItemValuesXml;
-        
-        public UpdateDataItemValuesRequest()
-        {
-        }
-        
-        public UpdateDataItemValuesRequest(string dataItemValuesXml)
-        {
-            this.dataItemValuesXml = dataItemValuesXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateDataItemValuesResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateDataItemValuesResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public UpdateDataItemValuesResponse()
-        {
-        }
-        
-        public UpdateDataItemValuesResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateDataItemValueByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateDataItemValueByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string dataItemName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string dataItemValue;
-        
-        public UpdateDataItemValueByNameRequest()
-        {
-        }
-        
-        public UpdateDataItemValueByNameRequest(string dataItemName, string dataItemValue)
-        {
-            this.dataItemName = dataItemName;
-            this.dataItemValue = dataItemValue;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateDataItemValueByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateDataItemValueByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public UpdateDataItemValueByNameResponse()
-        {
-        }
-        
-        public UpdateDataItemValueByNameResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateDataItemValueByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateDataItemValueByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int dataItemId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string dataItemValue;
-        
-        public UpdateDataItemValueByIDRequest()
-        {
-        }
-        
-        public UpdateDataItemValueByIDRequest(int dataItemId, string dataItemValue)
-        {
-            this.dataItemId = dataItemId;
-            this.dataItemValue = dataItemValue;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="UpdateDataItemValueByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class UpdateDataItemValueByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public UpdateDataItemValueByIDResponse()
-        {
-        }
-        
-        public UpdateDataItemValueByIDResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveDataItemByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveDataItemByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string dataItemName;
-        
-        public RemoveDataItemByNameRequest()
-        {
-        }
-        
-        public RemoveDataItemByNameRequest(string dataItemName)
-        {
-            this.dataItemName = dataItemName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveDataItemByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveDataItemByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveDataItemByNameResponse()
-        {
-        }
-        
-        public RemoveDataItemByNameResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveDataItemByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveDataItemByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int dataItemId;
-        
-        public RemoveDataItemByIDRequest()
-        {
-        }
-        
-        public RemoveDataItemByIDRequest(int dataItemId)
-        {
-            this.dataItemId = dataItemId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveDataItemByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveDataItemByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveDataItemByIDResponse()
-        {
-        }
-        
-        public RemoveDataItemByIDResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateDataItem", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateDataItemRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string dataItemXml;
-        
-        public AddUpdateDataItemRequest()
-        {
-        }
-        
-        public AddUpdateDataItemRequest(string dataItemXml)
-        {
-            this.dataItemXml = dataItemXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateDataItemResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateDataItemResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public AddUpdateDataItemResponse()
-        {
-        }
-        
-        public AddUpdateDataItemResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetZoneByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetZoneByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string layoutName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string zoneName;
-        
-        public GetZoneByNameRequest()
-        {
-        }
-        
-        public GetZoneByNameRequest(string layoutName, string zoneName)
-        {
-            this.layoutName = layoutName;
-            this.zoneName = zoneName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetZoneByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetZoneByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string zoneInfoXml;
-        
-        public GetZoneByNameResponse()
-        {
-        }
-        
-        public GetZoneByNameResponse(int Result, string zoneInfoXml)
-        {
-            this.Result = Result;
-            this.zoneInfoXml = zoneInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetZoneByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetZoneByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int zoneId;
-        
-        public GetZoneByIDRequest()
-        {
-        }
-        
-        public GetZoneByIDRequest(int zoneId)
-        {
-            this.zoneId = zoneId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetZoneByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetZoneByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string zoneInfoXml;
-        
-        public GetZoneByIDResponse()
-        {
-        }
-        
-        public GetZoneByIDResponse(int Result, string zoneInfoXml)
-        {
-            this.Result = Result;
-            this.zoneInfoXml = zoneInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveZoneByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveZoneByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string layoutName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string zoneName;
-        
-        public RemoveZoneByNameRequest()
-        {
-        }
-        
-        public RemoveZoneByNameRequest(string layoutName, string zoneName)
-        {
-            this.layoutName = layoutName;
-            this.zoneName = zoneName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveZoneByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveZoneByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveZoneByNameResponse()
-        {
-        }
-        
-        public RemoveZoneByNameResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveZoneByID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveZoneByIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int zoneId;
-        
-        public RemoveZoneByIDRequest()
-        {
-        }
-        
-        public RemoveZoneByIDRequest(int zoneId)
-        {
-            this.zoneId = zoneId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveZoneByIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveZoneByIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveZoneByIDResponse()
-        {
-        }
-        
-        public RemoveZoneByIDResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateZone", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateZoneRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string zoneXml;
-        
-        public AddUpdateZoneRequest()
-        {
-        }
-        
-        public AddUpdateZoneRequest(string zoneXml)
-        {
-            this.zoneXml = zoneXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateZoneResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateZoneResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public AddUpdateZoneResponse()
-        {
-        }
-        
-        public AddUpdateZoneResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayoutParentID", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutParentIDRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string layoutName;
-        
-        public GetLayoutParentIDRequest()
-        {
-        }
-        
-        public GetLayoutParentIDRequest(string layoutName)
-        {
-            this.layoutName = layoutName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayoutParentIDResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutParentIDResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int parentId;
-        
-        public GetLayoutParentIDResponse()
-        {
-        }
-        
-        public GetLayoutParentIDResponse(int Result, int parentId)
-        {
-            this.Result = Result;
-            this.parentId = parentId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayoutByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string layoutName;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int returnZoneInfo;
-        
-        public GetLayoutByNameRequest()
-        {
-        }
-        
-        public GetLayoutByNameRequest(string layoutName, int returnZoneInfo)
-        {
-            this.layoutName = layoutName;
-            this.returnZoneInfo = returnZoneInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayoutByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string layoutInfoXml;
-        
-        public GetLayoutByNameResponse()
-        {
-        }
-        
-        public GetLayoutByNameResponse(int Result, string layoutInfoXml)
-        {
-            this.Result = Result;
-            this.layoutInfoXml = layoutInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayoutById", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutByIdRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int layoutId;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public int returnZoneInfo;
-        
-        public GetLayoutByIdRequest()
-        {
-        }
-        
-        public GetLayoutByIdRequest(int layoutId, int returnZoneInfo)
-        {
-            this.layoutId = layoutId;
-            this.returnZoneInfo = returnZoneInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayoutByIdResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutByIdResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string layoutInfoXml;
-        
-        public GetLayoutByIdResponse()
-        {
-        }
-        
-        public GetLayoutByIdResponse(int Result, string layoutInfoXml)
-        {
-            this.Result = Result;
-            this.layoutInfoXml = layoutInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayouts", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutsRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int returnZoneInfo;
-        
-        public GetLayoutsRequest()
-        {
-        }
-        
-        public GetLayoutsRequest(int returnZoneInfo)
-        {
-            this.returnZoneInfo = returnZoneInfo;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="GetLayoutsResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class GetLayoutsResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=1)]
-        public string layoutInfoXml;
-        
-        public GetLayoutsResponse()
-        {
-        }
-        
-        public GetLayoutsResponse(int Result, string layoutInfoXml)
-        {
-            this.Result = Result;
-            this.layoutInfoXml = layoutInfoXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveLayoutByName", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveLayoutByNameRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string layoutName;
-        
-        public RemoveLayoutByNameRequest()
-        {
-        }
-        
-        public RemoveLayoutByNameRequest(string layoutName)
-        {
-            this.layoutName = layoutName;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveLayoutByNameResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveLayoutByNameResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveLayoutByNameResponse()
-        {
-        }
-        
-        public RemoveLayoutByNameResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveLayoutById", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveLayoutByIdRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int layoutId;
-        
-        public RemoveLayoutByIdRequest()
-        {
-        }
-        
-        public RemoveLayoutByIdRequest(int layoutId)
-        {
-            this.layoutId = layoutId;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="RemoveLayoutByIdResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class RemoveLayoutByIdResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public RemoveLayoutByIdResponse()
-        {
-        }
-        
-        public RemoveLayoutByIdResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateLayout", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateLayoutRequest
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public string layoutXml;
-        
-        public AddUpdateLayoutRequest()
-        {
-        }
-        
-        public AddUpdateLayoutRequest(string layoutXml)
-        {
-            this.layoutXml = layoutXml;
-        }
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-    [System.ServiceModel.MessageContractAttribute(WrapperName="AddUpdateLayoutResponse", WrapperNamespace="http://tempuri.org/message/", IsWrapped=true)]
-    public partial class AddUpdateLayoutResponse
-    {
-        
-        [System.ServiceModel.MessageBodyMemberAttribute(Namespace="", Order=0)]
-        public int Result;
-        
-        public AddUpdateLayoutResponse()
-        {
-        }
-        
-        public AddUpdateLayoutResponse(int Result)
-        {
-            this.Result = Result;
-        }
-    }
-    
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public interface SignSvrSoapPortChannel : IpDisplaysSoapService.SignSvrSoapPort, System.ServiceModel.IClientChannel
-    {
-    }
-    
-    [System.Diagnostics.DebuggerStepThroughAttribute()]
-    [System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
-    public partial class SignSvrSoapPortClient : System.ServiceModel.ClientBase<IpDisplaysSoapService.SignSvrSoapPort>, IpDisplaysSoapService.SignSvrSoapPort
-    {
-        
-        /// <summary>
-        /// Implement this partial method to configure the service endpoint.
-        /// </summary>
-        /// <param name="serviceEndpoint">The endpoint to configure</param>
-        /// <param name="clientCredentials">The client credentials</param>
-        static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
-        
-        public SignSvrSoapPortClient() : 
-                base(SignSvrSoapPortClient.GetDefaultBinding(), SignSvrSoapPortClient.GetDefaultEndpointAddress())
-        {
-            this.Endpoint.Name = EndpointConfiguration.SignSvrSoapPort.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public SignSvrSoapPortClient(EndpointConfiguration endpointConfiguration) : 
-                base(SignSvrSoapPortClient.GetBindingForEndpoint(endpointConfiguration), SignSvrSoapPortClient.GetEndpointAddress(endpointConfiguration))
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public SignSvrSoapPortClient(EndpointConfiguration endpointConfiguration, string remoteAddress) : 
-                base(SignSvrSoapPortClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public SignSvrSoapPortClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(SignSvrSoapPortClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
-        {
-            this.Endpoint.Name = endpointConfiguration.ToString();
-            ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
-        }
-        
-        public SignSvrSoapPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) : 
-                base(binding, remoteAddress)
-        {
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SetLayoutStateResponse> IpDisplaysSoapService.SignSvrSoapPort.SetLayoutStateAsync(IpDisplaysSoapService.SetLayoutStateRequest request)
-        {
-            return base.Channel.SetLayoutStateAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.SetLayoutStateResponse> SetLayoutStateAsync(string layoutName, int EnabledState)
-        {
-            IpDisplaysSoapService.SetLayoutStateRequest inValue = new IpDisplaysSoapService.SetLayoutStateRequest();
-            inValue.layoutName = layoutName;
-            inValue.EnabledState = EnabledState;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).SetLayoutStateAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SetMessageStateResponse> IpDisplaysSoapService.SignSvrSoapPort.SetMessageStateAsync(IpDisplaysSoapService.SetMessageStateRequest request)
-        {
-            return base.Channel.SetMessageStateAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.SetMessageStateResponse> SetMessageStateAsync(int targetId, int orderId, int EnabledState)
-        {
-            IpDisplaysSoapService.SetMessageStateRequest inValue = new IpDisplaysSoapService.SetMessageStateRequest();
-            inValue.targetId = targetId;
-            inValue.orderId = orderId;
-            inValue.EnabledState = EnabledState;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).SetMessageStateAsync(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetConditionsResponse> GetConditionsAsync(IpDisplaysSoapService.GetConditionsRequest request)
-        {
-            return base.Channel.GetConditionsAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetConditionByNameResponse> GetConditionByNameAsync(IpDisplaysSoapService.GetConditionByNameRequest request)
-        {
-            return base.Channel.GetConditionByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetConditionByIDResponse> GetConditionByIDAsync(IpDisplaysSoapService.GetConditionByIDRequest request)
-        {
-            return base.Channel.GetConditionByIDAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveConditionByNameResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveConditionByNameAsync(IpDisplaysSoapService.RemoveConditionByNameRequest request)
-        {
-            return base.Channel.RemoveConditionByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveConditionByNameResponse> RemoveConditionByNameAsync(string conditionName)
-        {
-            IpDisplaysSoapService.RemoveConditionByNameRequest inValue = new IpDisplaysSoapService.RemoveConditionByNameRequest();
-            inValue.conditionName = conditionName;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveConditionByNameAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveConditionByIDResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveConditionByIDAsync(IpDisplaysSoapService.RemoveConditionByIDRequest request)
-        {
-            return base.Channel.RemoveConditionByIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveConditionByIDResponse> RemoveConditionByIDAsync(int conditionId)
-        {
-            IpDisplaysSoapService.RemoveConditionByIDRequest inValue = new IpDisplaysSoapService.RemoveConditionByIDRequest();
-            inValue.conditionId = conditionId;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveConditionByIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateConditionResponse> IpDisplaysSoapService.SignSvrSoapPort.AddUpdateConditionAsync(IpDisplaysSoapService.AddUpdateConditionRequest request)
-        {
-            return base.Channel.AddUpdateConditionAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateConditionResponse> AddUpdateConditionAsync(string conditionXml)
-        {
-            IpDisplaysSoapService.AddUpdateConditionRequest inValue = new IpDisplaysSoapService.AddUpdateConditionRequest();
-            inValue.conditionXml = conditionXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).AddUpdateConditionAsync(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetThresholdsResponse> GetThresholdsAsync(IpDisplaysSoapService.GetThresholdsRequest request)
-        {
-            return base.Channel.GetThresholdsAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetThresholdByNameResponse> GetThresholdByNameAsync(IpDisplaysSoapService.GetThresholdByNameRequest request)
-        {
-            return base.Channel.GetThresholdByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetThresholdByIDResponse> GetThresholdByIDAsync(IpDisplaysSoapService.GetThresholdByIDRequest request)
-        {
-            return base.Channel.GetThresholdByIDAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveThresholdByNameResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveThresholdByNameAsync(IpDisplaysSoapService.RemoveThresholdByNameRequest request)
-        {
-            return base.Channel.RemoveThresholdByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveThresholdByNameResponse> RemoveThresholdByNameAsync(string thresholdName)
-        {
-            IpDisplaysSoapService.RemoveThresholdByNameRequest inValue = new IpDisplaysSoapService.RemoveThresholdByNameRequest();
-            inValue.thresholdName = thresholdName;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveThresholdByNameAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveThresholdByIDResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveThresholdByIDAsync(IpDisplaysSoapService.RemoveThresholdByIDRequest request)
-        {
-            return base.Channel.RemoveThresholdByIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveThresholdByIDResponse> RemoveThresholdByIDAsync(int thresholdId)
-        {
-            IpDisplaysSoapService.RemoveThresholdByIDRequest inValue = new IpDisplaysSoapService.RemoveThresholdByIDRequest();
-            inValue.thresholdId = thresholdId;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveThresholdByIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateThresholdResponse> IpDisplaysSoapService.SignSvrSoapPort.AddUpdateThresholdAsync(IpDisplaysSoapService.AddUpdateThresholdRequest request)
-        {
-            return base.Channel.AddUpdateThresholdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateThresholdResponse> AddUpdateThresholdAsync(string thresholdXml)
-        {
-            IpDisplaysSoapService.AddUpdateThresholdRequest inValue = new IpDisplaysSoapService.AddUpdateThresholdRequest();
-            inValue.thresholdXml = thresholdXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).AddUpdateThresholdAsync(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetMessagesResponse> GetMessagesAsync(IpDisplaysSoapService.GetMessagesRequest request)
-        {
-            return base.Channel.GetMessagesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetMessageByTargetOrderResponse> GetMessageByTargetOrderAsync(IpDisplaysSoapService.GetMessageByTargetOrderRequest request)
-        {
-            return base.Channel.GetMessageByTargetOrderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetMessageByIDResponse> GetMessageByIDAsync(IpDisplaysSoapService.GetMessageByIDRequest request)
-        {
-            return base.Channel.GetMessageByIDAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveMessageByTargetOrderResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveMessageByTargetOrderAsync(IpDisplaysSoapService.RemoveMessageByTargetOrderRequest request)
-        {
-            return base.Channel.RemoveMessageByTargetOrderAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveMessageByTargetOrderResponse> RemoveMessageByTargetOrderAsync(int targetId, int orderId)
-        {
-            IpDisplaysSoapService.RemoveMessageByTargetOrderRequest inValue = new IpDisplaysSoapService.RemoveMessageByTargetOrderRequest();
-            inValue.targetId = targetId;
-            inValue.orderId = orderId;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveMessageByTargetOrderAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveMessageByIDResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveMessageByIDAsync(IpDisplaysSoapService.RemoveMessageByIDRequest request)
-        {
-            return base.Channel.RemoveMessageByIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveMessageByIDResponse> RemoveMessageByIDAsync(int messageId)
-        {
-            IpDisplaysSoapService.RemoveMessageByIDRequest inValue = new IpDisplaysSoapService.RemoveMessageByIDRequest();
-            inValue.messageId = messageId;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveMessageByIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateMessageResponse> IpDisplaysSoapService.SignSvrSoapPort.AddUpdateMessageAsync(IpDisplaysSoapService.AddUpdateMessageRequest request)
-        {
-            return base.Channel.AddUpdateMessageAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateMessageResponse> AddUpdateMessageAsync(string messageXml)
-        {
-            IpDisplaysSoapService.AddUpdateMessageRequest inValue = new IpDisplaysSoapService.AddUpdateMessageRequest();
-            inValue.messageXml = messageXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).AddUpdateMessageAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.GetImagesResponse> IpDisplaysSoapService.SignSvrSoapPort.GetImagesAsync(IpDisplaysSoapService.GetImagesRequest request)
-        {
-            return base.Channel.GetImagesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetImagesResponse> GetImagesAsync()
-        {
-            IpDisplaysSoapService.GetImagesRequest inValue = new IpDisplaysSoapService.GetImagesRequest();
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).GetImagesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.DeleteImageResponse> IpDisplaysSoapService.SignSvrSoapPort.DeleteImageAsync(IpDisplaysSoapService.DeleteImageRequest request)
-        {
-            return base.Channel.DeleteImageAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.DeleteImageResponse> DeleteImageAsync(string imageName)
-        {
-            IpDisplaysSoapService.DeleteImageRequest inValue = new IpDisplaysSoapService.DeleteImageRequest();
-            inValue.imageName = imageName;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).DeleteImageAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UploadImageResponse> IpDisplaysSoapService.SignSvrSoapPort.UploadImageAsync(IpDisplaysSoapService.UploadImageRequest request)
-        {
-            return base.Channel.UploadImageAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.UploadImageResponse> UploadImageAsync(string imageName, string base64Image)
-        {
-            IpDisplaysSoapService.UploadImageRequest inValue = new IpDisplaysSoapService.UploadImageRequest();
-            inValue.imageName = imageName;
-            inValue.base64Image = base64Image;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).UploadImageAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateSignInfo2Response> IpDisplaysSoapService.SignSvrSoapPort.UpdateSignInfo2Async(IpDisplaysSoapService.UpdateSignInfo2Request request)
-        {
-            return base.Channel.UpdateSignInfo2Async(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateSignInfo2Response> UpdateSignInfo2Async(int infoId, string infoXml)
-        {
-            IpDisplaysSoapService.UpdateSignInfo2Request inValue = new IpDisplaysSoapService.UpdateSignInfo2Request();
-            inValue.infoId = infoId;
-            inValue.infoXml = infoXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).UpdateSignInfo2Async(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetSignInfo2Response> GetSignInfo2Async(IpDisplaysSoapService.GetSignInfo2Request request)
-        {
-            return base.Channel.GetSignInfo2Async(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetSignInfoResponse> GetSignInfoAsync(IpDisplaysSoapService.GetSignInfoRequest request)
-        {
-            return base.Channel.GetSignInfoAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetDateTimeResponse> GetDateTimeAsync(IpDisplaysSoapService.GetDateTimeRequest request)
-        {
-            return base.Channel.GetDateTimeAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SetDateTimeResponse> IpDisplaysSoapService.SignSvrSoapPort.SetDateTimeAsync(IpDisplaysSoapService.SetDateTimeRequest request)
-        {
-            return base.Channel.SetDateTimeAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.SetDateTimeResponse> SetDateTimeAsync(System.DateTime dateTimeText)
-        {
-            IpDisplaysSoapService.SetDateTimeRequest inValue = new IpDisplaysSoapService.SetDateTimeRequest();
-            inValue.dateTimeText = dateTimeText;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).SetDateTimeAsync(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetScreenSnapshotResponse> GetScreenSnapshotAsync(IpDisplaysSoapService.GetScreenSnapshotRequest request)
-        {
-            return base.Channel.GetScreenSnapshotAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.SendCommandResponse> IpDisplaysSoapService.SignSvrSoapPort.SendCommandAsync(IpDisplaysSoapService.SendCommandRequest request)
-        {
-            return base.Channel.SendCommandAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.SendCommandResponse> SendCommandAsync(int commandID, string commandText)
-        {
-            IpDisplaysSoapService.SendCommandRequest inValue = new IpDisplaysSoapService.SendCommandRequest();
-            inValue.commandID = commandID;
-            inValue.commandText = commandText;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).SendCommandAsync(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.SendCommand2Response> SendCommand2Async(IpDisplaysSoapService.SendCommand2Request request)
-        {
-            return base.Channel.SendCommand2Async(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetDataItemsResponse> GetDataItemsAsync(IpDisplaysSoapService.GetDataItemsRequest request)
-        {
-            return base.Channel.GetDataItemsAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetDataItemByNameResponse> GetDataItemByNameAsync(IpDisplaysSoapService.GetDataItemByNameRequest request)
-        {
-            return base.Channel.GetDataItemByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetDataItemByIDResponse> GetDataItemByIDAsync(IpDisplaysSoapService.GetDataItemByIDRequest request)
-        {
-            return base.Channel.GetDataItemByIDAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValuesResponse> IpDisplaysSoapService.SignSvrSoapPort.UpdateDataItemValuesAsync(IpDisplaysSoapService.UpdateDataItemValuesRequest request)
-        {
-            return base.Channel.UpdateDataItemValuesAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValuesResponse> UpdateDataItemValuesAsync(string dataItemValuesXml)
-        {
-            IpDisplaysSoapService.UpdateDataItemValuesRequest inValue = new IpDisplaysSoapService.UpdateDataItemValuesRequest();
-            inValue.dataItemValuesXml = dataItemValuesXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).UpdateDataItemValuesAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValueByNameResponse> IpDisplaysSoapService.SignSvrSoapPort.UpdateDataItemValueByNameAsync(IpDisplaysSoapService.UpdateDataItemValueByNameRequest request)
-        {
-            return base.Channel.UpdateDataItemValueByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValueByNameResponse> UpdateDataItemValueByNameAsync(string dataItemName, string dataItemValue)
-        {
-            IpDisplaysSoapService.UpdateDataItemValueByNameRequest inValue = new IpDisplaysSoapService.UpdateDataItemValueByNameRequest();
-            inValue.dataItemName = dataItemName;
-            inValue.dataItemValue = dataItemValue;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).UpdateDataItemValueByNameAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValueByIDResponse> IpDisplaysSoapService.SignSvrSoapPort.UpdateDataItemValueByIDAsync(IpDisplaysSoapService.UpdateDataItemValueByIDRequest request)
-        {
-            return base.Channel.UpdateDataItemValueByIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.UpdateDataItemValueByIDResponse> UpdateDataItemValueByIDAsync(int dataItemId, string dataItemValue)
-        {
-            IpDisplaysSoapService.UpdateDataItemValueByIDRequest inValue = new IpDisplaysSoapService.UpdateDataItemValueByIDRequest();
-            inValue.dataItemId = dataItemId;
-            inValue.dataItemValue = dataItemValue;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).UpdateDataItemValueByIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveDataItemByNameResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveDataItemByNameAsync(IpDisplaysSoapService.RemoveDataItemByNameRequest request)
-        {
-            return base.Channel.RemoveDataItemByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveDataItemByNameResponse> RemoveDataItemByNameAsync(string dataItemName)
-        {
-            IpDisplaysSoapService.RemoveDataItemByNameRequest inValue = new IpDisplaysSoapService.RemoveDataItemByNameRequest();
-            inValue.dataItemName = dataItemName;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveDataItemByNameAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveDataItemByIDResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveDataItemByIDAsync(IpDisplaysSoapService.RemoveDataItemByIDRequest request)
-        {
-            return base.Channel.RemoveDataItemByIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveDataItemByIDResponse> RemoveDataItemByIDAsync(int dataItemId)
-        {
-            IpDisplaysSoapService.RemoveDataItemByIDRequest inValue = new IpDisplaysSoapService.RemoveDataItemByIDRequest();
-            inValue.dataItemId = dataItemId;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveDataItemByIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateDataItemResponse> IpDisplaysSoapService.SignSvrSoapPort.AddUpdateDataItemAsync(IpDisplaysSoapService.AddUpdateDataItemRequest request)
-        {
-            return base.Channel.AddUpdateDataItemAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateDataItemResponse> AddUpdateDataItemAsync(string dataItemXml)
-        {
-            IpDisplaysSoapService.AddUpdateDataItemRequest inValue = new IpDisplaysSoapService.AddUpdateDataItemRequest();
-            inValue.dataItemXml = dataItemXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).AddUpdateDataItemAsync(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetZoneByNameResponse> GetZoneByNameAsync(IpDisplaysSoapService.GetZoneByNameRequest request)
-        {
-            return base.Channel.GetZoneByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetZoneByIDResponse> GetZoneByIDAsync(IpDisplaysSoapService.GetZoneByIDRequest request)
-        {
-            return base.Channel.GetZoneByIDAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveZoneByNameResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveZoneByNameAsync(IpDisplaysSoapService.RemoveZoneByNameRequest request)
-        {
-            return base.Channel.RemoveZoneByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveZoneByNameResponse> RemoveZoneByNameAsync(string layoutName, string zoneName)
-        {
-            IpDisplaysSoapService.RemoveZoneByNameRequest inValue = new IpDisplaysSoapService.RemoveZoneByNameRequest();
-            inValue.layoutName = layoutName;
-            inValue.zoneName = zoneName;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveZoneByNameAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveZoneByIDResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveZoneByIDAsync(IpDisplaysSoapService.RemoveZoneByIDRequest request)
-        {
-            return base.Channel.RemoveZoneByIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveZoneByIDResponse> RemoveZoneByIDAsync(int zoneId)
-        {
-            IpDisplaysSoapService.RemoveZoneByIDRequest inValue = new IpDisplaysSoapService.RemoveZoneByIDRequest();
-            inValue.zoneId = zoneId;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveZoneByIDAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateZoneResponse> IpDisplaysSoapService.SignSvrSoapPort.AddUpdateZoneAsync(IpDisplaysSoapService.AddUpdateZoneRequest request)
-        {
-            return base.Channel.AddUpdateZoneAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateZoneResponse> AddUpdateZoneAsync(string zoneXml)
-        {
-            IpDisplaysSoapService.AddUpdateZoneRequest inValue = new IpDisplaysSoapService.AddUpdateZoneRequest();
-            inValue.zoneXml = zoneXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).AddUpdateZoneAsync(inValue);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutParentIDResponse> GetLayoutParentIDAsync(IpDisplaysSoapService.GetLayoutParentIDRequest request)
-        {
-            return base.Channel.GetLayoutParentIDAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutByNameResponse> GetLayoutByNameAsync(IpDisplaysSoapService.GetLayoutByNameRequest request)
-        {
-            return base.Channel.GetLayoutByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutByIdResponse> GetLayoutByIdAsync(IpDisplaysSoapService.GetLayoutByIdRequest request)
-        {
-            return base.Channel.GetLayoutByIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.GetLayoutsResponse> GetLayoutsAsync(IpDisplaysSoapService.GetLayoutsRequest request)
-        {
-            return base.Channel.GetLayoutsAsync(request);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveLayoutByNameResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveLayoutByNameAsync(IpDisplaysSoapService.RemoveLayoutByNameRequest request)
-        {
-            return base.Channel.RemoveLayoutByNameAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveLayoutByNameResponse> RemoveLayoutByNameAsync(string layoutName)
-        {
-            IpDisplaysSoapService.RemoveLayoutByNameRequest inValue = new IpDisplaysSoapService.RemoveLayoutByNameRequest();
-            inValue.layoutName = layoutName;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveLayoutByNameAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveLayoutByIdResponse> IpDisplaysSoapService.SignSvrSoapPort.RemoveLayoutByIdAsync(IpDisplaysSoapService.RemoveLayoutByIdRequest request)
-        {
-            return base.Channel.RemoveLayoutByIdAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.RemoveLayoutByIdResponse> RemoveLayoutByIdAsync(int layoutId)
-        {
-            IpDisplaysSoapService.RemoveLayoutByIdRequest inValue = new IpDisplaysSoapService.RemoveLayoutByIdRequest();
-            inValue.layoutId = layoutId;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).RemoveLayoutByIdAsync(inValue);
-        }
-        
-        [System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
-        System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateLayoutResponse> IpDisplaysSoapService.SignSvrSoapPort.AddUpdateLayoutAsync(IpDisplaysSoapService.AddUpdateLayoutRequest request)
-        {
-            return base.Channel.AddUpdateLayoutAsync(request);
-        }
-        
-        public System.Threading.Tasks.Task<IpDisplaysSoapService.AddUpdateLayoutResponse> AddUpdateLayoutAsync(string layoutXml)
-        {
-            IpDisplaysSoapService.AddUpdateLayoutRequest inValue = new IpDisplaysSoapService.AddUpdateLayoutRequest();
-            inValue.layoutXml = layoutXml;
-            return ((IpDisplaysSoapService.SignSvrSoapPort)(this)).AddUpdateLayoutAsync(inValue);
-        }
-        
-        public virtual System.Threading.Tasks.Task OpenAsync()
-        {
-            return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
-        }
-        
-        private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
-        {
-            if ((endpointConfiguration == EndpointConfiguration.SignSvrSoapPort))
-            {
-                System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
-                result.MaxBufferSize = int.MaxValue;
-                result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
-                result.MaxReceivedMessageSize = int.MaxValue;
-                result.AllowCookies = true;
-                return result;
-            }
-            throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
-        }
-        
-        private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
-        {
-            if ((endpointConfiguration == EndpointConfiguration.SignSvrSoapPort))
-            {
-                return new System.ServiceModel.EndpointAddress("http://192.168.1.85/Soap1.wsdl");
-            }
-            throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
-        }
-        
-        private static System.ServiceModel.Channels.Binding GetDefaultBinding()
-        {
-            return SignSvrSoapPortClient.GetBindingForEndpoint(EndpointConfiguration.SignSvrSoapPort);
-        }
-        
-        private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
-        {
-            return SignSvrSoapPortClient.GetEndpointAddress(EndpointConfiguration.SignSvrSoapPort);
-        }
-        
-        public enum EndpointConfiguration
-        {
-            
-            SignSvrSoapPort,
-        }
-    }
+
+
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.ServiceContractAttribute(Namespace = "http://tempuri.org/wsdl/", ConfigurationName = "Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort")]
+	public interface SignSvrSoapPort
+	{
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.SetLayoutState", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetLayoutStateResponse> SetLayoutStateAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetLayoutStateRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.SetMessageState", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetMessageStateResponse> SetMessageStateAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetMessageStateRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetConditions", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionsResponse> GetConditionsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionsRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetConditionByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByNameResponse> GetConditionByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByNameRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetConditionByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByIDResponse> GetConditionByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveConditionByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByNameResponse> RemoveConditionByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByNameRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveConditionByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByIDResponse> RemoveConditionByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.AddUpdateCondition", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateConditionResponse> AddUpdateConditionAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateConditionRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetThresholds", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdsResponse> GetThresholdsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdsRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetThresholdByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByNameResponse> GetThresholdByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByNameRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetThresholdByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByIDResponse> GetThresholdByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveThresholdByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByNameResponse> RemoveThresholdByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByNameRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveThresholdByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByIDResponse> RemoveThresholdByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.AddUpdateThreshold", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateThresholdResponse> AddUpdateThresholdAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateThresholdRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetMessages", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessagesResponse> GetMessagesAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessagesRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetMessageByTargetOrder", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByTargetOrderResponse> GetMessageByTargetOrderAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByTargetOrderRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetMessageByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByIDResponse> GetMessageByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveMessageByTargetOrder", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByTargetOrderResponse> RemoveMessageByTargetOrderAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByTargetOrderRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveMessageByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByIDResponse> RemoveMessageByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.AddUpdateMessage", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateMessageResponse> AddUpdateMessageAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateMessageRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetImages", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetImagesResponse> GetImagesAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetImagesRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.DeleteImage", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.DeleteImageResponse> DeleteImageAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.DeleteImageRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.UploadImage", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UploadImageResponse> UploadImageAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UploadImageRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.UpdateSignInfo2", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateSignInfo2Response> UpdateSignInfo2Async(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateSignInfo2Request request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetSignInfo2", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfo2Response> GetSignInfo2Async(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfo2Request request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetSignInfo", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfoResponse> GetSignInfoAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfoRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetDateTime", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDateTimeResponse> GetDateTimeAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDateTimeRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.SetDateTime", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetDateTimeResponse> SetDateTimeAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetDateTimeRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetScreenSnapshot", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetScreenSnapshotResponse> GetScreenSnapshotAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetScreenSnapshotRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.SendCommand", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommandResponse> SendCommandAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommandRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.SendCommand2", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommand2Response> SendCommand2Async(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommand2Request request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetDataItems", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemsResponse> GetDataItemsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemsRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetDataItemByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByNameResponse> GetDataItemByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByNameRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetDataItemByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByIDResponse> GetDataItemByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.UpdateDataItemValues", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValuesResponse> UpdateDataItemValuesAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValuesRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.UpdateDataItemValueByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByNameResponse> UpdateDataItemValueByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByNameRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.UpdateDataItemValueByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByIDResponse> UpdateDataItemValueByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveDataItemByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByNameResponse> RemoveDataItemByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByNameRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveDataItemByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByIDResponse> RemoveDataItemByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.AddUpdateDataItem", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateDataItemResponse> AddUpdateDataItemAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateDataItemRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetZoneByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByNameResponse> GetZoneByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByNameRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetZoneByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByIDResponse> GetZoneByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveZoneByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByNameResponse> RemoveZoneByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByNameRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveZoneByID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByIDResponse> RemoveZoneByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByIDRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.AddUpdateZone", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateZoneResponse> AddUpdateZoneAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateZoneRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetLayoutParentID", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutParentIDResponse> GetLayoutParentIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutParentIDRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetLayoutByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByNameResponse> GetLayoutByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByNameRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetLayoutById", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByIdResponse> GetLayoutByIdAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByIdRequest request);
+
+		// CODEGEN: Generating message contract since the operation has multiple return values.
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.GetLayouts", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutsResponse> GetLayoutsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutsRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveLayoutByName", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByNameResponse> RemoveLayoutByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByNameRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.RemoveLayoutById", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByIdResponse> RemoveLayoutByIdAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByIdRequest request);
+
+		[System.ServiceModel.OperationContractAttribute(Action = "http://tempuri.org/action/SignSvr.AddUpdateLayout", ReplyAction = "*")]
+		[System.ServiceModel.XmlSerializerFormatAttribute(Style = System.ServiceModel.OperationFormatStyle.Rpc, SupportFaults = true, Use = System.ServiceModel.OperationFormatUse.Encoded)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateLayoutResponse> AddUpdateLayoutAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateLayoutRequest request);
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SetLayoutState", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SetLayoutStateRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string layoutName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int EnabledState;
+
+		public SetLayoutStateRequest()
+		{
+		}
+
+		public SetLayoutStateRequest(string layoutName, int EnabledState)
+		{
+			this.layoutName = layoutName;
+			this.EnabledState = EnabledState;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SetLayoutStateResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SetLayoutStateResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public SetLayoutStateResponse()
+		{
+		}
+
+		public SetLayoutStateResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SetMessageState", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SetMessageStateRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int targetId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int orderId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 2)]
+		public int EnabledState;
+
+		public SetMessageStateRequest()
+		{
+		}
+
+		public SetMessageStateRequest(int targetId, int orderId, int EnabledState)
+		{
+			this.targetId = targetId;
+			this.orderId = orderId;
+			this.EnabledState = EnabledState;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SetMessageStateResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SetMessageStateResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public SetMessageStateResponse()
+		{
+		}
+
+		public SetMessageStateResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetConditions", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetConditionsRequest
+	{
+
+		public GetConditionsRequest()
+		{
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetConditionsResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetConditionsResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string conditionInfoXml;
+
+		public GetConditionsResponse()
+		{
+		}
+
+		public GetConditionsResponse(int Result, string conditionInfoXml)
+		{
+			this.Result = Result;
+			this.conditionInfoXml = conditionInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetConditionByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetConditionByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string conditionName;
+
+		public GetConditionByNameRequest()
+		{
+		}
+
+		public GetConditionByNameRequest(string conditionName)
+		{
+			this.conditionName = conditionName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetConditionByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetConditionByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string conditionInfoXml;
+
+		public GetConditionByNameResponse()
+		{
+		}
+
+		public GetConditionByNameResponse(int Result, string conditionInfoXml)
+		{
+			this.Result = Result;
+			this.conditionInfoXml = conditionInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetConditionByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetConditionByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int conditionId;
+
+		public GetConditionByIDRequest()
+		{
+		}
+
+		public GetConditionByIDRequest(int conditionId)
+		{
+			this.conditionId = conditionId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetConditionByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetConditionByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string conditionInfoXml;
+
+		public GetConditionByIDResponse()
+		{
+		}
+
+		public GetConditionByIDResponse(int Result, string conditionInfoXml)
+		{
+			this.Result = Result;
+			this.conditionInfoXml = conditionInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveConditionByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveConditionByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string conditionName;
+
+		public RemoveConditionByNameRequest()
+		{
+		}
+
+		public RemoveConditionByNameRequest(string conditionName)
+		{
+			this.conditionName = conditionName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveConditionByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveConditionByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveConditionByNameResponse()
+		{
+		}
+
+		public RemoveConditionByNameResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveConditionByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveConditionByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int conditionId;
+
+		public RemoveConditionByIDRequest()
+		{
+		}
+
+		public RemoveConditionByIDRequest(int conditionId)
+		{
+			this.conditionId = conditionId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveConditionByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveConditionByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveConditionByIDResponse()
+		{
+		}
+
+		public RemoveConditionByIDResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateCondition", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateConditionRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string conditionXml;
+
+		public AddUpdateConditionRequest()
+		{
+		}
+
+		public AddUpdateConditionRequest(string conditionXml)
+		{
+			this.conditionXml = conditionXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateConditionResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateConditionResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public AddUpdateConditionResponse()
+		{
+		}
+
+		public AddUpdateConditionResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetThresholds", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetThresholdsRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int returnSetPointInfo;
+
+		public GetThresholdsRequest()
+		{
+		}
+
+		public GetThresholdsRequest(int returnSetPointInfo)
+		{
+			this.returnSetPointInfo = returnSetPointInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetThresholdsResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetThresholdsResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string thresholdInfoXml;
+
+		public GetThresholdsResponse()
+		{
+		}
+
+		public GetThresholdsResponse(int Result, string thresholdInfoXml)
+		{
+			this.Result = Result;
+			this.thresholdInfoXml = thresholdInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetThresholdByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetThresholdByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string thresholdName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int returnSetPointInfo;
+
+		public GetThresholdByNameRequest()
+		{
+		}
+
+		public GetThresholdByNameRequest(string thresholdName, int returnSetPointInfo)
+		{
+			this.thresholdName = thresholdName;
+			this.returnSetPointInfo = returnSetPointInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetThresholdByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetThresholdByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string thresholdInfoXml;
+
+		public GetThresholdByNameResponse()
+		{
+		}
+
+		public GetThresholdByNameResponse(int Result, string thresholdInfoXml)
+		{
+			this.Result = Result;
+			this.thresholdInfoXml = thresholdInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetThresholdByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetThresholdByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int thresholdId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int returnSetPointInfo;
+
+		public GetThresholdByIDRequest()
+		{
+		}
+
+		public GetThresholdByIDRequest(int thresholdId, int returnSetPointInfo)
+		{
+			this.thresholdId = thresholdId;
+			this.returnSetPointInfo = returnSetPointInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetThresholdByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetThresholdByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string thresholdInfoXml;
+
+		public GetThresholdByIDResponse()
+		{
+		}
+
+		public GetThresholdByIDResponse(int Result, string thresholdInfoXml)
+		{
+			this.Result = Result;
+			this.thresholdInfoXml = thresholdInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveThresholdByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveThresholdByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string thresholdName;
+
+		public RemoveThresholdByNameRequest()
+		{
+		}
+
+		public RemoveThresholdByNameRequest(string thresholdName)
+		{
+			this.thresholdName = thresholdName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveThresholdByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveThresholdByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveThresholdByNameResponse()
+		{
+		}
+
+		public RemoveThresholdByNameResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveThresholdByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveThresholdByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int thresholdId;
+
+		public RemoveThresholdByIDRequest()
+		{
+		}
+
+		public RemoveThresholdByIDRequest(int thresholdId)
+		{
+			this.thresholdId = thresholdId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveThresholdByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveThresholdByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveThresholdByIDResponse()
+		{
+		}
+
+		public RemoveThresholdByIDResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateThreshold", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateThresholdRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string thresholdXml;
+
+		public AddUpdateThresholdRequest()
+		{
+		}
+
+		public AddUpdateThresholdRequest(string thresholdXml)
+		{
+			this.thresholdXml = thresholdXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateThresholdResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateThresholdResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public AddUpdateThresholdResponse()
+		{
+		}
+
+		public AddUpdateThresholdResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetMessages", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetMessagesRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int targetId;
+
+		public GetMessagesRequest()
+		{
+		}
+
+		public GetMessagesRequest(int targetId)
+		{
+			this.targetId = targetId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetMessagesResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetMessagesResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string messageInfoXml;
+
+		public GetMessagesResponse()
+		{
+		}
+
+		public GetMessagesResponse(int Result, string messageInfoXml)
+		{
+			this.Result = Result;
+			this.messageInfoXml = messageInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetMessageByTargetOrder", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetMessageByTargetOrderRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int targetId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int orderId;
+
+		public GetMessageByTargetOrderRequest()
+		{
+		}
+
+		public GetMessageByTargetOrderRequest(int targetId, int orderId)
+		{
+			this.targetId = targetId;
+			this.orderId = orderId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetMessageByTargetOrderResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetMessageByTargetOrderResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string messageInfoXml;
+
+		public GetMessageByTargetOrderResponse()
+		{
+		}
+
+		public GetMessageByTargetOrderResponse(int Result, string messageInfoXml)
+		{
+			this.Result = Result;
+			this.messageInfoXml = messageInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetMessageByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetMessageByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int messageId;
+
+		public GetMessageByIDRequest()
+		{
+		}
+
+		public GetMessageByIDRequest(int messageId)
+		{
+			this.messageId = messageId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetMessageByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetMessageByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string messageInfoXml;
+
+		public GetMessageByIDResponse()
+		{
+		}
+
+		public GetMessageByIDResponse(int Result, string messageInfoXml)
+		{
+			this.Result = Result;
+			this.messageInfoXml = messageInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveMessageByTargetOrder", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveMessageByTargetOrderRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int targetId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int orderId;
+
+		public RemoveMessageByTargetOrderRequest()
+		{
+		}
+
+		public RemoveMessageByTargetOrderRequest(int targetId, int orderId)
+		{
+			this.targetId = targetId;
+			this.orderId = orderId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveMessageByTargetOrderResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveMessageByTargetOrderResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveMessageByTargetOrderResponse()
+		{
+		}
+
+		public RemoveMessageByTargetOrderResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveMessageByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveMessageByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int messageId;
+
+		public RemoveMessageByIDRequest()
+		{
+		}
+
+		public RemoveMessageByIDRequest(int messageId)
+		{
+			this.messageId = messageId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveMessageByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveMessageByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveMessageByIDResponse()
+		{
+		}
+
+		public RemoveMessageByIDResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateMessage", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateMessageRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string messageXml;
+
+		public AddUpdateMessageRequest()
+		{
+		}
+
+		public AddUpdateMessageRequest(string messageXml)
+		{
+			this.messageXml = messageXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateMessageResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateMessageResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public AddUpdateMessageResponse()
+		{
+		}
+
+		public AddUpdateMessageResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetImages", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetImagesRequest
+	{
+
+		public GetImagesRequest()
+		{
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetImagesResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetImagesResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string imagesXml;
+
+		public GetImagesResponse()
+		{
+		}
+
+		public GetImagesResponse(string imagesXml)
+		{
+			this.imagesXml = imagesXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteImage", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class DeleteImageRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string imageName;
+
+		public DeleteImageRequest()
+		{
+		}
+
+		public DeleteImageRequest(string imageName)
+		{
+			this.imageName = imageName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "DeleteImageResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class DeleteImageResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public DeleteImageResponse()
+		{
+		}
+
+		public DeleteImageResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UploadImage", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UploadImageRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string imageName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string base64Image;
+
+		public UploadImageRequest()
+		{
+		}
+
+		public UploadImageRequest(string imageName, string base64Image)
+		{
+			this.imageName = imageName;
+			this.base64Image = base64Image;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UploadImageResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UploadImageResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public UploadImageResponse()
+		{
+		}
+
+		public UploadImageResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateSignInfo2", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateSignInfo2Request
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int infoId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string infoXml;
+
+		public UpdateSignInfo2Request()
+		{
+		}
+
+		public UpdateSignInfo2Request(int infoId, string infoXml)
+		{
+			this.infoId = infoId;
+			this.infoXml = infoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateSignInfo2Response", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateSignInfo2Response
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public UpdateSignInfo2Response()
+		{
+		}
+
+		public UpdateSignInfo2Response(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetSignInfo2", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetSignInfo2Request
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int infoId;
+
+		public GetSignInfo2Request()
+		{
+		}
+
+		public GetSignInfo2Request(int infoId)
+		{
+			this.infoId = infoId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetSignInfo2Response", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetSignInfo2Response
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string infoXml;
+
+		public GetSignInfo2Response()
+		{
+		}
+
+		public GetSignInfo2Response(int Result, string infoXml)
+		{
+			this.Result = Result;
+			this.infoXml = infoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetSignInfo", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetSignInfoRequest
+	{
+
+		public GetSignInfoRequest()
+		{
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetSignInfoResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetSignInfoResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string signInfoXml;
+
+		public GetSignInfoResponse()
+		{
+		}
+
+		public GetSignInfoResponse(int Result, string signInfoXml)
+		{
+			this.Result = Result;
+			this.signInfoXml = signInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDateTime", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDateTimeRequest
+	{
+
+		public GetDateTimeRequest()
+		{
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDateTimeResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDateTimeResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public System.DateTime dateTimeText;
+
+		public GetDateTimeResponse()
+		{
+		}
+
+		public GetDateTimeResponse(int Result, System.DateTime dateTimeText)
+		{
+			this.Result = Result;
+			this.dateTimeText = dateTimeText;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SetDateTime", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SetDateTimeRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public System.DateTime dateTimeText;
+
+		public SetDateTimeRequest()
+		{
+		}
+
+		public SetDateTimeRequest(System.DateTime dateTimeText)
+		{
+			this.dateTimeText = dateTimeText;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SetDateTimeResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SetDateTimeResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public SetDateTimeResponse()
+		{
+		}
+
+		public SetDateTimeResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetScreenSnapshot", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetScreenSnapshotRequest
+	{
+
+		public GetScreenSnapshotRequest()
+		{
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetScreenSnapshotResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetScreenSnapshotResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string fileName;
+
+		public GetScreenSnapshotResponse()
+		{
+		}
+
+		public GetScreenSnapshotResponse(int Result, string fileName)
+		{
+			this.Result = Result;
+			this.fileName = fileName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SendCommand", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SendCommandRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int commandID;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string commandText;
+
+		public SendCommandRequest()
+		{
+		}
+
+		public SendCommandRequest(int commandID, string commandText)
+		{
+			this.commandID = commandID;
+			this.commandText = commandText;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SendCommandResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SendCommandResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public SendCommandResponse()
+		{
+		}
+
+		public SendCommandResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SendCommand2", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SendCommand2Request
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int commandID;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string commandText;
+
+		public SendCommand2Request()
+		{
+		}
+
+		public SendCommand2Request(int commandID, string commandText)
+		{
+			this.commandID = commandID;
+			this.commandText = commandText;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "SendCommand2Response", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class SendCommand2Response
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string retInfo;
+
+		public SendCommand2Response()
+		{
+		}
+
+		public SendCommand2Response(int Result, string retInfo)
+		{
+			this.Result = Result;
+			this.retInfo = retInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDataItems", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDataItemsRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string request;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int returnDataInfo;
+
+		public GetDataItemsRequest()
+		{
+		}
+
+		public GetDataItemsRequest(string request, int returnDataInfo)
+		{
+			this.request = request;
+			this.returnDataInfo = returnDataInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDataItemsResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDataItemsResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string dataItemInfoXml;
+
+		public GetDataItemsResponse()
+		{
+		}
+
+		public GetDataItemsResponse(int Result, string dataItemInfoXml)
+		{
+			this.Result = Result;
+			this.dataItemInfoXml = dataItemInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDataItemByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDataItemByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string dataItemName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int returnDataInfo;
+
+		public GetDataItemByNameRequest()
+		{
+		}
+
+		public GetDataItemByNameRequest(string dataItemName, int returnDataInfo)
+		{
+			this.dataItemName = dataItemName;
+			this.returnDataInfo = returnDataInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDataItemByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDataItemByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string dataItemInfoXml;
+
+		public GetDataItemByNameResponse()
+		{
+		}
+
+		public GetDataItemByNameResponse(int Result, string dataItemInfoXml)
+		{
+			this.Result = Result;
+			this.dataItemInfoXml = dataItemInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDataItemByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDataItemByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int dataItemId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int returnDataInfo;
+
+		public GetDataItemByIDRequest()
+		{
+		}
+
+		public GetDataItemByIDRequest(int dataItemId, int returnDataInfo)
+		{
+			this.dataItemId = dataItemId;
+			this.returnDataInfo = returnDataInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetDataItemByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetDataItemByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string dataItemInfoXml;
+
+		public GetDataItemByIDResponse()
+		{
+		}
+
+		public GetDataItemByIDResponse(int Result, string dataItemInfoXml)
+		{
+			this.Result = Result;
+			this.dataItemInfoXml = dataItemInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateDataItemValues", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateDataItemValuesRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string dataItemValuesXml;
+
+		public UpdateDataItemValuesRequest()
+		{
+		}
+
+		public UpdateDataItemValuesRequest(string dataItemValuesXml)
+		{
+			this.dataItemValuesXml = dataItemValuesXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateDataItemValuesResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateDataItemValuesResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public UpdateDataItemValuesResponse()
+		{
+		}
+
+		public UpdateDataItemValuesResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateDataItemValueByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateDataItemValueByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string dataItemName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string dataItemValue;
+
+		public UpdateDataItemValueByNameRequest()
+		{
+		}
+
+		public UpdateDataItemValueByNameRequest(string dataItemName, string dataItemValue)
+		{
+			this.dataItemName = dataItemName;
+			this.dataItemValue = dataItemValue;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateDataItemValueByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateDataItemValueByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public UpdateDataItemValueByNameResponse()
+		{
+		}
+
+		public UpdateDataItemValueByNameResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateDataItemValueByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateDataItemValueByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int dataItemId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string dataItemValue;
+
+		public UpdateDataItemValueByIDRequest()
+		{
+		}
+
+		public UpdateDataItemValueByIDRequest(int dataItemId, string dataItemValue)
+		{
+			this.dataItemId = dataItemId;
+			this.dataItemValue = dataItemValue;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "UpdateDataItemValueByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class UpdateDataItemValueByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public UpdateDataItemValueByIDResponse()
+		{
+		}
+
+		public UpdateDataItemValueByIDResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveDataItemByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveDataItemByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string dataItemName;
+
+		public RemoveDataItemByNameRequest()
+		{
+		}
+
+		public RemoveDataItemByNameRequest(string dataItemName)
+		{
+			this.dataItemName = dataItemName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveDataItemByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveDataItemByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveDataItemByNameResponse()
+		{
+		}
+
+		public RemoveDataItemByNameResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveDataItemByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveDataItemByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int dataItemId;
+
+		public RemoveDataItemByIDRequest()
+		{
+		}
+
+		public RemoveDataItemByIDRequest(int dataItemId)
+		{
+			this.dataItemId = dataItemId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveDataItemByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveDataItemByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveDataItemByIDResponse()
+		{
+		}
+
+		public RemoveDataItemByIDResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateDataItem", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateDataItemRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string dataItemXml;
+
+		public AddUpdateDataItemRequest()
+		{
+		}
+
+		public AddUpdateDataItemRequest(string dataItemXml)
+		{
+			this.dataItemXml = dataItemXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateDataItemResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateDataItemResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public AddUpdateDataItemResponse()
+		{
+		}
+
+		public AddUpdateDataItemResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetZoneByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetZoneByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string layoutName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string zoneName;
+
+		public GetZoneByNameRequest()
+		{
+		}
+
+		public GetZoneByNameRequest(string layoutName, string zoneName)
+		{
+			this.layoutName = layoutName;
+			this.zoneName = zoneName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetZoneByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetZoneByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string zoneInfoXml;
+
+		public GetZoneByNameResponse()
+		{
+		}
+
+		public GetZoneByNameResponse(int Result, string zoneInfoXml)
+		{
+			this.Result = Result;
+			this.zoneInfoXml = zoneInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetZoneByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetZoneByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int zoneId;
+
+		public GetZoneByIDRequest()
+		{
+		}
+
+		public GetZoneByIDRequest(int zoneId)
+		{
+			this.zoneId = zoneId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetZoneByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetZoneByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string zoneInfoXml;
+
+		public GetZoneByIDResponse()
+		{
+		}
+
+		public GetZoneByIDResponse(int Result, string zoneInfoXml)
+		{
+			this.Result = Result;
+			this.zoneInfoXml = zoneInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveZoneByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveZoneByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string layoutName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string zoneName;
+
+		public RemoveZoneByNameRequest()
+		{
+		}
+
+		public RemoveZoneByNameRequest(string layoutName, string zoneName)
+		{
+			this.layoutName = layoutName;
+			this.zoneName = zoneName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveZoneByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveZoneByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveZoneByNameResponse()
+		{
+		}
+
+		public RemoveZoneByNameResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveZoneByID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveZoneByIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int zoneId;
+
+		public RemoveZoneByIDRequest()
+		{
+		}
+
+		public RemoveZoneByIDRequest(int zoneId)
+		{
+			this.zoneId = zoneId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveZoneByIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveZoneByIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveZoneByIDResponse()
+		{
+		}
+
+		public RemoveZoneByIDResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateZone", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateZoneRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string zoneXml;
+
+		public AddUpdateZoneRequest()
+		{
+		}
+
+		public AddUpdateZoneRequest(string zoneXml)
+		{
+			this.zoneXml = zoneXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateZoneResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateZoneResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public AddUpdateZoneResponse()
+		{
+		}
+
+		public AddUpdateZoneResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayoutParentID", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutParentIDRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string layoutName;
+
+		public GetLayoutParentIDRequest()
+		{
+		}
+
+		public GetLayoutParentIDRequest(string layoutName)
+		{
+			this.layoutName = layoutName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayoutParentIDResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutParentIDResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int parentId;
+
+		public GetLayoutParentIDResponse()
+		{
+		}
+
+		public GetLayoutParentIDResponse(int Result, int parentId)
+		{
+			this.Result = Result;
+			this.parentId = parentId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayoutByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string layoutName;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int returnZoneInfo;
+
+		public GetLayoutByNameRequest()
+		{
+		}
+
+		public GetLayoutByNameRequest(string layoutName, int returnZoneInfo)
+		{
+			this.layoutName = layoutName;
+			this.returnZoneInfo = returnZoneInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayoutByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string layoutInfoXml;
+
+		public GetLayoutByNameResponse()
+		{
+		}
+
+		public GetLayoutByNameResponse(int Result, string layoutInfoXml)
+		{
+			this.Result = Result;
+			this.layoutInfoXml = layoutInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayoutById", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutByIdRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int layoutId;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public int returnZoneInfo;
+
+		public GetLayoutByIdRequest()
+		{
+		}
+
+		public GetLayoutByIdRequest(int layoutId, int returnZoneInfo)
+		{
+			this.layoutId = layoutId;
+			this.returnZoneInfo = returnZoneInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayoutByIdResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutByIdResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string layoutInfoXml;
+
+		public GetLayoutByIdResponse()
+		{
+		}
+
+		public GetLayoutByIdResponse(int Result, string layoutInfoXml)
+		{
+			this.Result = Result;
+			this.layoutInfoXml = layoutInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayouts", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutsRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int returnZoneInfo;
+
+		public GetLayoutsRequest()
+		{
+		}
+
+		public GetLayoutsRequest(int returnZoneInfo)
+		{
+			this.returnZoneInfo = returnZoneInfo;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "GetLayoutsResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class GetLayoutsResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 1)]
+		public string layoutInfoXml;
+
+		public GetLayoutsResponse()
+		{
+		}
+
+		public GetLayoutsResponse(int Result, string layoutInfoXml)
+		{
+			this.Result = Result;
+			this.layoutInfoXml = layoutInfoXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveLayoutByName", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveLayoutByNameRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string layoutName;
+
+		public RemoveLayoutByNameRequest()
+		{
+		}
+
+		public RemoveLayoutByNameRequest(string layoutName)
+		{
+			this.layoutName = layoutName;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveLayoutByNameResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveLayoutByNameResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveLayoutByNameResponse()
+		{
+		}
+
+		public RemoveLayoutByNameResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveLayoutById", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveLayoutByIdRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int layoutId;
+
+		public RemoveLayoutByIdRequest()
+		{
+		}
+
+		public RemoveLayoutByIdRequest(int layoutId)
+		{
+			this.layoutId = layoutId;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "RemoveLayoutByIdResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class RemoveLayoutByIdResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public RemoveLayoutByIdResponse()
+		{
+		}
+
+		public RemoveLayoutByIdResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateLayout", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateLayoutRequest
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public string layoutXml;
+
+		public AddUpdateLayoutRequest()
+		{
+		}
+
+		public AddUpdateLayoutRequest(string layoutXml)
+		{
+			this.layoutXml = layoutXml;
+		}
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+	[System.ServiceModel.MessageContractAttribute(WrapperName = "AddUpdateLayoutResponse", WrapperNamespace = "http://tempuri.org/message/", IsWrapped = true)]
+	public partial class AddUpdateLayoutResponse
+	{
+
+		[System.ServiceModel.MessageBodyMemberAttribute(Namespace = "", Order = 0)]
+		public int Result;
+
+		public AddUpdateLayoutResponse()
+		{
+		}
+
+		public AddUpdateLayoutResponse(int Result)
+		{
+			this.Result = Result;
+		}
+	}
+
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	public interface SignSvrSoapPortChannel : Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort, System.ServiceModel.IClientChannel
+	{
+	}
+
+	[System.Diagnostics.DebuggerStepThroughAttribute()]
+	[System.CodeDom.Compiler.GeneratedCodeAttribute("Microsoft.Tools.ServiceModel.Svcutil", "2.2.0-preview1.23462.5")]
+	public partial class SignSvrSoapPortClient : System.ServiceModel.ClientBase<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort>, Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort
+	{
+
+		/// <summary>
+		/// Implement this partial method to configure the service endpoint.
+		/// </summary>
+		/// <param name="serviceEndpoint">The endpoint to configure</param>
+		/// <param name="clientCredentials">The client credentials</param>
+		static partial void ConfigureEndpoint(System.ServiceModel.Description.ServiceEndpoint serviceEndpoint, System.ServiceModel.Description.ClientCredentials clientCredentials);
+
+		public SignSvrSoapPortClient() :
+				base(SignSvrSoapPortClient.GetDefaultBinding(), SignSvrSoapPortClient.GetDefaultEndpointAddress())
+		{
+			this.Endpoint.Name = EndpointConfiguration.SignSvrSoapPort.ToString();
+			ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+		}
+
+		public SignSvrSoapPortClient(EndpointConfiguration endpointConfiguration) :
+				base(SignSvrSoapPortClient.GetBindingForEndpoint(endpointConfiguration), SignSvrSoapPortClient.GetEndpointAddress(endpointConfiguration))
+		{
+			this.Endpoint.Name = endpointConfiguration.ToString();
+			ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+		}
+
+		public SignSvrSoapPortClient(EndpointConfiguration endpointConfiguration, string remoteAddress) :
+				base(SignSvrSoapPortClient.GetBindingForEndpoint(endpointConfiguration), new System.ServiceModel.EndpointAddress(remoteAddress))
+		{
+			this.Endpoint.Name = endpointConfiguration.ToString();
+			ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+		}
+
+		public SignSvrSoapPortClient(EndpointConfiguration endpointConfiguration, System.ServiceModel.EndpointAddress remoteAddress) :
+				base(SignSvrSoapPortClient.GetBindingForEndpoint(endpointConfiguration), remoteAddress)
+		{
+			this.Endpoint.Name = endpointConfiguration.ToString();
+			ConfigureEndpoint(this.Endpoint, this.ClientCredentials);
+		}
+
+		public SignSvrSoapPortClient(System.ServiceModel.Channels.Binding binding, System.ServiceModel.EndpointAddress remoteAddress) :
+				base(binding, remoteAddress)
+		{
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetLayoutStateResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.SetLayoutStateAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetLayoutStateRequest request)
+		{
+			return base.Channel.SetLayoutStateAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetLayoutStateResponse> SetLayoutStateAsync(string layoutName, int EnabledState)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetLayoutStateRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetLayoutStateRequest();
+			inValue.layoutName = layoutName;
+			inValue.EnabledState = EnabledState;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).SetLayoutStateAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetMessageStateResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.SetMessageStateAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetMessageStateRequest request)
+		{
+			return base.Channel.SetMessageStateAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetMessageStateResponse> SetMessageStateAsync(int targetId, int orderId, int EnabledState)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetMessageStateRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetMessageStateRequest();
+			inValue.targetId = targetId;
+			inValue.orderId = orderId;
+			inValue.EnabledState = EnabledState;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).SetMessageStateAsync(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionsResponse> GetConditionsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionsRequest request)
+		{
+			return base.Channel.GetConditionsAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByNameResponse> GetConditionByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByNameRequest request)
+		{
+			return base.Channel.GetConditionByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByIDResponse> GetConditionByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetConditionByIDRequest request)
+		{
+			return base.Channel.GetConditionByIDAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByNameResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveConditionByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByNameRequest request)
+		{
+			return base.Channel.RemoveConditionByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByNameResponse> RemoveConditionByNameAsync(string conditionName)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByNameRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByNameRequest();
+			inValue.conditionName = conditionName;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveConditionByNameAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByIDResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveConditionByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByIDRequest request)
+		{
+			return base.Channel.RemoveConditionByIDAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByIDResponse> RemoveConditionByIDAsync(int conditionId)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByIDRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveConditionByIDRequest();
+			inValue.conditionId = conditionId;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveConditionByIDAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateConditionResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.AddUpdateConditionAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateConditionRequest request)
+		{
+			return base.Channel.AddUpdateConditionAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateConditionResponse> AddUpdateConditionAsync(string conditionXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateConditionRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateConditionRequest();
+			inValue.conditionXml = conditionXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).AddUpdateConditionAsync(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdsResponse> GetThresholdsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdsRequest request)
+		{
+			return base.Channel.GetThresholdsAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByNameResponse> GetThresholdByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByNameRequest request)
+		{
+			return base.Channel.GetThresholdByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByIDResponse> GetThresholdByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetThresholdByIDRequest request)
+		{
+			return base.Channel.GetThresholdByIDAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByNameResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveThresholdByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByNameRequest request)
+		{
+			return base.Channel.RemoveThresholdByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByNameResponse> RemoveThresholdByNameAsync(string thresholdName)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByNameRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByNameRequest();
+			inValue.thresholdName = thresholdName;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveThresholdByNameAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByIDResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveThresholdByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByIDRequest request)
+		{
+			return base.Channel.RemoveThresholdByIDAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByIDResponse> RemoveThresholdByIDAsync(int thresholdId)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByIDRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveThresholdByIDRequest();
+			inValue.thresholdId = thresholdId;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveThresholdByIDAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateThresholdResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.AddUpdateThresholdAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateThresholdRequest request)
+		{
+			return base.Channel.AddUpdateThresholdAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateThresholdResponse> AddUpdateThresholdAsync(string thresholdXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateThresholdRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateThresholdRequest();
+			inValue.thresholdXml = thresholdXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).AddUpdateThresholdAsync(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessagesResponse> GetMessagesAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessagesRequest request)
+		{
+			return base.Channel.GetMessagesAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByTargetOrderResponse> GetMessageByTargetOrderAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByTargetOrderRequest request)
+		{
+			return base.Channel.GetMessageByTargetOrderAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByIDResponse> GetMessageByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetMessageByIDRequest request)
+		{
+			return base.Channel.GetMessageByIDAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByTargetOrderResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveMessageByTargetOrderAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByTargetOrderRequest request)
+		{
+			return base.Channel.RemoveMessageByTargetOrderAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByTargetOrderResponse> RemoveMessageByTargetOrderAsync(int targetId, int orderId)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByTargetOrderRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByTargetOrderRequest();
+			inValue.targetId = targetId;
+			inValue.orderId = orderId;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveMessageByTargetOrderAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByIDResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveMessageByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByIDRequest request)
+		{
+			return base.Channel.RemoveMessageByIDAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByIDResponse> RemoveMessageByIDAsync(int messageId)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByIDRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveMessageByIDRequest();
+			inValue.messageId = messageId;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveMessageByIDAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateMessageResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.AddUpdateMessageAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateMessageRequest request)
+		{
+			return base.Channel.AddUpdateMessageAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateMessageResponse> AddUpdateMessageAsync(string messageXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateMessageRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateMessageRequest();
+			inValue.messageXml = messageXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).AddUpdateMessageAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetImagesResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.GetImagesAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetImagesRequest request)
+		{
+			return base.Channel.GetImagesAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetImagesResponse> GetImagesAsync()
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetImagesRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetImagesRequest();
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).GetImagesAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.DeleteImageResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.DeleteImageAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.DeleteImageRequest request)
+		{
+			return base.Channel.DeleteImageAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.DeleteImageResponse> DeleteImageAsync(string imageName)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.DeleteImageRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.DeleteImageRequest();
+			inValue.imageName = imageName;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).DeleteImageAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UploadImageResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.UploadImageAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UploadImageRequest request)
+		{
+			return base.Channel.UploadImageAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UploadImageResponse> UploadImageAsync(string imageName, string base64Image)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.UploadImageRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.UploadImageRequest();
+			inValue.imageName = imageName;
+			inValue.base64Image = base64Image;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).UploadImageAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateSignInfo2Response> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.UpdateSignInfo2Async(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateSignInfo2Request request)
+		{
+			return base.Channel.UpdateSignInfo2Async(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateSignInfo2Response> UpdateSignInfo2Async(int infoId, string infoXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateSignInfo2Request inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateSignInfo2Request();
+			inValue.infoId = infoId;
+			inValue.infoXml = infoXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).UpdateSignInfo2Async(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfo2Response> GetSignInfo2Async(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfo2Request request)
+		{
+			return base.Channel.GetSignInfo2Async(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfoResponse> GetSignInfoAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetSignInfoRequest request)
+		{
+			return base.Channel.GetSignInfoAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDateTimeResponse> GetDateTimeAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDateTimeRequest request)
+		{
+			return base.Channel.GetDateTimeAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetDateTimeResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.SetDateTimeAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetDateTimeRequest request)
+		{
+			return base.Channel.SetDateTimeAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetDateTimeResponse> SetDateTimeAsync(System.DateTime dateTimeText)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetDateTimeRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.SetDateTimeRequest();
+			inValue.dateTimeText = dateTimeText;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).SetDateTimeAsync(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetScreenSnapshotResponse> GetScreenSnapshotAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetScreenSnapshotRequest request)
+		{
+			return base.Channel.GetScreenSnapshotAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommandResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.SendCommandAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommandRequest request)
+		{
+			return base.Channel.SendCommandAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommandResponse> SendCommandAsync(int commandID, string commandText)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommandRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommandRequest();
+			inValue.commandID = commandID;
+			inValue.commandText = commandText;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).SendCommandAsync(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommand2Response> SendCommand2Async(Mtd.Kiosk.LedUpdater.IpDisplaysApi.SendCommand2Request request)
+		{
+			return base.Channel.SendCommand2Async(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemsResponse> GetDataItemsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemsRequest request)
+		{
+			return base.Channel.GetDataItemsAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByNameResponse> GetDataItemByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByNameRequest request)
+		{
+			return base.Channel.GetDataItemByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByIDResponse> GetDataItemByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetDataItemByIDRequest request)
+		{
+			return base.Channel.GetDataItemByIDAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValuesResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.UpdateDataItemValuesAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValuesRequest request)
+		{
+			return base.Channel.UpdateDataItemValuesAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValuesResponse> UpdateDataItemValuesAsync(string dataItemValuesXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValuesRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValuesRequest();
+			inValue.dataItemValuesXml = dataItemValuesXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).UpdateDataItemValuesAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByNameResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.UpdateDataItemValueByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByNameRequest request)
+		{
+			return base.Channel.UpdateDataItemValueByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByNameResponse> UpdateDataItemValueByNameAsync(string dataItemName, string dataItemValue)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByNameRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByNameRequest();
+			inValue.dataItemName = dataItemName;
+			inValue.dataItemValue = dataItemValue;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).UpdateDataItemValueByNameAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByIDResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.UpdateDataItemValueByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByIDRequest request)
+		{
+			return base.Channel.UpdateDataItemValueByIDAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByIDResponse> UpdateDataItemValueByIDAsync(int dataItemId, string dataItemValue)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByIDRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.UpdateDataItemValueByIDRequest();
+			inValue.dataItemId = dataItemId;
+			inValue.dataItemValue = dataItemValue;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).UpdateDataItemValueByIDAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByNameResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveDataItemByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByNameRequest request)
+		{
+			return base.Channel.RemoveDataItemByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByNameResponse> RemoveDataItemByNameAsync(string dataItemName)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByNameRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByNameRequest();
+			inValue.dataItemName = dataItemName;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveDataItemByNameAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByIDResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveDataItemByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByIDRequest request)
+		{
+			return base.Channel.RemoveDataItemByIDAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByIDResponse> RemoveDataItemByIDAsync(int dataItemId)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByIDRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveDataItemByIDRequest();
+			inValue.dataItemId = dataItemId;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveDataItemByIDAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateDataItemResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.AddUpdateDataItemAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateDataItemRequest request)
+		{
+			return base.Channel.AddUpdateDataItemAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateDataItemResponse> AddUpdateDataItemAsync(string dataItemXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateDataItemRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateDataItemRequest();
+			inValue.dataItemXml = dataItemXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).AddUpdateDataItemAsync(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByNameResponse> GetZoneByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByNameRequest request)
+		{
+			return base.Channel.GetZoneByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByIDResponse> GetZoneByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetZoneByIDRequest request)
+		{
+			return base.Channel.GetZoneByIDAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByNameResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveZoneByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByNameRequest request)
+		{
+			return base.Channel.RemoveZoneByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByNameResponse> RemoveZoneByNameAsync(string layoutName, string zoneName)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByNameRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByNameRequest();
+			inValue.layoutName = layoutName;
+			inValue.zoneName = zoneName;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveZoneByNameAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByIDResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveZoneByIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByIDRequest request)
+		{
+			return base.Channel.RemoveZoneByIDAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByIDResponse> RemoveZoneByIDAsync(int zoneId)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByIDRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveZoneByIDRequest();
+			inValue.zoneId = zoneId;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveZoneByIDAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateZoneResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.AddUpdateZoneAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateZoneRequest request)
+		{
+			return base.Channel.AddUpdateZoneAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateZoneResponse> AddUpdateZoneAsync(string zoneXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateZoneRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateZoneRequest();
+			inValue.zoneXml = zoneXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).AddUpdateZoneAsync(inValue);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutParentIDResponse> GetLayoutParentIDAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutParentIDRequest request)
+		{
+			return base.Channel.GetLayoutParentIDAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByNameResponse> GetLayoutByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByNameRequest request)
+		{
+			return base.Channel.GetLayoutByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByIdResponse> GetLayoutByIdAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutByIdRequest request)
+		{
+			return base.Channel.GetLayoutByIdAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutsResponse> GetLayoutsAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.GetLayoutsRequest request)
+		{
+			return base.Channel.GetLayoutsAsync(request);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByNameResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveLayoutByNameAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByNameRequest request)
+		{
+			return base.Channel.RemoveLayoutByNameAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByNameResponse> RemoveLayoutByNameAsync(string layoutName)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByNameRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByNameRequest();
+			inValue.layoutName = layoutName;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveLayoutByNameAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByIdResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.RemoveLayoutByIdAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByIdRequest request)
+		{
+			return base.Channel.RemoveLayoutByIdAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByIdResponse> RemoveLayoutByIdAsync(int layoutId)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByIdRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.RemoveLayoutByIdRequest();
+			inValue.layoutId = layoutId;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).RemoveLayoutByIdAsync(inValue);
+		}
+
+		[System.ComponentModel.EditorBrowsableAttribute(System.ComponentModel.EditorBrowsableState.Advanced)]
+		System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateLayoutResponse> Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort.AddUpdateLayoutAsync(Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateLayoutRequest request)
+		{
+			return base.Channel.AddUpdateLayoutAsync(request);
+		}
+
+		public System.Threading.Tasks.Task<Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateLayoutResponse> AddUpdateLayoutAsync(string layoutXml)
+		{
+			Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateLayoutRequest inValue = new Mtd.Kiosk.LedUpdater.IpDisplaysApi.AddUpdateLayoutRequest();
+			inValue.layoutXml = layoutXml;
+			return ((Mtd.Kiosk.LedUpdater.IpDisplaysApi.SignSvrSoapPort)(this)).AddUpdateLayoutAsync(inValue);
+		}
+
+		public virtual System.Threading.Tasks.Task OpenAsync()
+		{
+			return System.Threading.Tasks.Task.Factory.FromAsync(((System.ServiceModel.ICommunicationObject)(this)).BeginOpen(null, null), new System.Action<System.IAsyncResult>(((System.ServiceModel.ICommunicationObject)(this)).EndOpen));
+		}
+
+		private static System.ServiceModel.Channels.Binding GetBindingForEndpoint(EndpointConfiguration endpointConfiguration)
+		{
+			if ((endpointConfiguration == EndpointConfiguration.SignSvrSoapPort))
+			{
+				System.ServiceModel.BasicHttpBinding result = new System.ServiceModel.BasicHttpBinding();
+				result.MaxBufferSize = int.MaxValue;
+				result.ReaderQuotas = System.Xml.XmlDictionaryReaderQuotas.Max;
+				result.MaxReceivedMessageSize = int.MaxValue;
+				result.AllowCookies = true;
+				return result;
+			}
+			throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
+		}
+
+		private static System.ServiceModel.EndpointAddress GetEndpointAddress(EndpointConfiguration endpointConfiguration)
+		{
+			if ((endpointConfiguration == EndpointConfiguration.SignSvrSoapPort))
+			{
+				return new System.ServiceModel.EndpointAddress("http://192.168.1.85/Soap1.wsdl");
+			}
+			throw new System.InvalidOperationException(string.Format("Could not find endpoint with name \'{0}\'.", endpointConfiguration));
+		}
+
+		private static System.ServiceModel.Channels.Binding GetDefaultBinding()
+		{
+			return SignSvrSoapPortClient.GetBindingForEndpoint(EndpointConfiguration.SignSvrSoapPort);
+		}
+
+		private static System.ServiceModel.EndpointAddress GetDefaultEndpointAddress()
+		{
+			return SignSvrSoapPortClient.GetEndpointAddress(EndpointConfiguration.SignSvrSoapPort);
+		}
+
+		public enum EndpointConfiguration
+		{
+
+			SignSvrSoapPort,
+		}
+	}
 }

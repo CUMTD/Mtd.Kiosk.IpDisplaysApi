@@ -1,9 +1,9 @@
-using System.ServiceModel;
-using System.Xml;
-using System.Xml.Serialization;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
+using System.ServiceModel;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi;
 
@@ -104,6 +104,7 @@ public class IPDisplaysApiClient
 			}
 
 		}
+
 		catch (Exception ex)
 		{
 			_logger.LogError(ex, "Failed to deserialize GetLayoutByName response xml.");
@@ -227,6 +228,7 @@ public class IPDisplaysApiClient
 		{
 			_logger.LogError(ex, "{name} Failed to Execute", nameof(UpdateDataItem));
 		}
+
 		return false;
 	}
 
