@@ -1,6 +1,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
+using System.ComponentModel.DataAnnotations;
 using System.ServiceModel;
 using System.Xml;
 using System.Xml.Serialization;
@@ -19,6 +20,8 @@ public class IPDisplaysApiClient
 	private const int START_TIMER = 96;
 	private const int STOP_TIMER = 94;
 	private const int PAUSE_TIMER = 95;
+
+	private const int SET_DISPLAY_BRIGHTNESS = 130;
 
 	#region Constructors
 
@@ -246,6 +249,26 @@ public class IPDisplaysApiClient
 		_ = await client.UpdateDataItemValuesAsync(xml);
 
 		return true;
+	}
+
+
+
+	public async Task<bool> UpdateSignBrightness([Range(1, 127)] int brightness)
+	{
+		using var client = GetSoapClient();
+
+		var result = await client.SendCommandAsync(SET_DISPLAY_BRIGHTNESS, brightness.ToString());
+
+		if (result.Result == 1)
+		{
+			_logger.LogTrace("Updated Sign Brightness to {brightness}", brightness);
+			return true;
+		}
+		else
+		{
+			_logger.LogError("Failed to Update Sign Brightness to {brightness}", brightness);
+			return false;
+		}
 	}
 	#endregion Api Methods
 

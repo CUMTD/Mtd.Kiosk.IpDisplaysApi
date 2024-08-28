@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Logging;
 using Mtd.Kiosk.LedUpdater.Realtime.Entitites;
+using System.ComponentModel.DataAnnotations;
 
 namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi;
 public class LedSign
@@ -86,6 +87,15 @@ public class LedSign
 		var result = await UpdateSign(string.Empty, string.Empty);
 
 		_logger.LogInformation("Sign blanked.");
+
+		return result;
+	}
+
+	public async Task<bool> UpdateBrightness([Range(1, 127)] int newBrightness)
+	{
+		var result = await _client.UpdateSignBrightness(newBrightness);
+
+		_logger.LogInformation("Sign brightness updated to {Brightness}", newBrightness);
 
 		return result;
 	}
