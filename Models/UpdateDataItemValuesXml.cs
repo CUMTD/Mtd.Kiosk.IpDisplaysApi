@@ -1,6 +1,6 @@
 using System.Xml.Serialization;
 
-namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
+namespace Mtd.Kiosk.IpDisplaysApi.Models;
 
 /*
  <DataItems>
@@ -17,7 +17,7 @@ public class UpdateDataItemValuesXml
 
 	public UpdateDataItemValuesXml()
 	{
-		DataItems = new List<DataItem>();
+		DataItems = [];
 	}
 
 	public UpdateDataItemValuesXml(List<DataItem> dataItems)

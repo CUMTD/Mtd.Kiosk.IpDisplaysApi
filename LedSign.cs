@@ -1,23 +1,20 @@
 using Microsoft.Extensions.Logging;
 using Mtd.Kiosk.IpDisplaysApi.Models;
-using Mtd.Kiosk.LedUpdater.IpDisplaysApi;
 using System.ComponentModel.DataAnnotations;
 
 namespace Mtd.Kiosk.IpDisplaysApi;
 public class LedSign
 {
 	private readonly string _kioskId;
-	private readonly string _kioskName;
 	private readonly IPDisplaysApiClient _client;
 	private readonly ILogger _logger;
 
-	public LedSign(string kioskId, string kioskName, string stopId, IPDisplaysApiClient client, ILogger logger)
+	public LedSign(string kioskId, IPDisplaysApiClient client, ILogger logger)
 	{
 		ArgumentNullException.ThrowIfNull(client);
 		ArgumentNullException.ThrowIfNull(logger);
 
 		_kioskId = kioskId;
-		_kioskName = $"{kioskName} ({stopId})";
 
 		_client = client;
 		_logger = logger;

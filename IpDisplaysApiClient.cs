@@ -1,12 +1,12 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
+using Mtd.Kiosk.LedUpdater.IpDisplaysApi;
 using System.ComponentModel.DataAnnotations;
 using System.ServiceModel;
 using System.Xml;
 using System.Xml.Serialization;
 
-namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi;
+namespace Mtd.Kiosk.IpDisplaysApi;
 
 // TODO: Use NuGet package instead of adding service reference
 
@@ -105,7 +105,6 @@ public class IPDisplaysApiClient
 			{
 				return layout;
 			}
-
 		}
 
 		catch (Exception ex)
@@ -250,8 +249,6 @@ public class IPDisplaysApiClient
 
 		return true;
 	}
-
-
 
 	public async Task<bool> UpdateSignBrightness([Range(1, 127)] int brightness)
 	{

@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 
-namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi;
+namespace Mtd.Kiosk.IpDisplaysApi;
 
 public class IpDisplaysApiClientFactory
 {

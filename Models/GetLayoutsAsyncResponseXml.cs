@@ -1,6 +1,5 @@
 using System.Xml.Serialization;
-namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
-
+namespace Mtd.Kiosk.IpDisplaysApi.Models;
 
 [XmlRoot(ElementName = "Layouts")]
 public class GetLayoutsAsyncResponseXml
@@ -9,7 +8,6 @@ public class GetLayoutsAsyncResponseXml
 	[XmlElement(ElementName = "Layout")]
 	public required List<Layout> Layout { get; set; }
 }
-
 
 [XmlRoot(ElementName = "Layout")]
 public class Layout
@@ -57,7 +55,6 @@ public class Layout
 	[XmlAttribute(AttributeName = "enabled")]
 	public string? Enabled { get; set; }
 
-
 	[XmlAttribute(AttributeName = "backpict")]
 	[XmlIgnore]
 	public object? Backpict { get; set; }
@@ -70,6 +67,4 @@ public class Layout
 	[XmlIgnore]
 	public object? Dfthresh { get; set; }
 }
-
-
 

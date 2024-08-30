@@ -1,6 +1,6 @@
 using System.Xml.Serialization;
 
-namespace Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
+namespace Mtd.Kiosk.IpDisplaysApi.Models;
 
 /*
  * 
@@ -45,12 +45,5 @@ public class GetLayoutByNameResponseXml
 	public string? BkThresh { get; set; }
 	[XmlAttribute("dfthresh")]
 	public string? DfThresh { get; set; }
-
-
-
-
 }
-
-
-
 
