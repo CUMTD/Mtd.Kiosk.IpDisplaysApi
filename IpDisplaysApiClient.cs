@@ -1,5 +1,6 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Mtd.Kiosk.IpDisplaysApi.Models;
 using Mtd.Kiosk.LedUpdater.IpDisplaysApi;
 using System.ComponentModel.DataAnnotations;
 using System.ServiceModel;
@@ -12,6 +13,7 @@ namespace Mtd.Kiosk.IpDisplaysApi;
 
 public class IPDisplaysApiClient
 {
+	private readonly string _kioskId;
 
 	private readonly Uri _uri;
 	private readonly TimeSpan _timeout;
@@ -25,12 +27,14 @@ public class IPDisplaysApiClient
 
 	#region Constructors
 
-	internal IPDisplaysApiClient(string ip, IOptions<IpDisplaysApiClientConfig> config, ILogger<IPDisplaysApiClient> logger)
+	internal IPDisplaysApiClient(string kioskId, string ip, IOptions<IpDisplaysApiClientConfig> config, ILogger<IPDisplaysApiClient> logger)
 	{
+		ArgumentException.ThrowIfNullOrWhiteSpace(kioskId);
 		ArgumentException.ThrowIfNullOrWhiteSpace(ip);
 		ArgumentNullException.ThrowIfNull(config, nameof(config));
 		ArgumentNullException.ThrowIfNull(logger, nameof(logger));
 
+		_kioskId = kioskId;
 		_uri = new Uri($"http://{ip}/soap1.wsdl");
 		_timeout = TimeSpan.FromMilliseconds(config.Value.TimeoutMiliseconds);
 		_logger = logger;
@@ -175,11 +179,11 @@ public class IPDisplaysApiClient
 
 		if (success)
 		{
-			_logger.LogTrace("Refreshed Timer on Sign");
+			_logger.LogTrace("Refreshed timer on {kioskId}", _kioskId);
 		}
 		else
 		{
-			_logger.LogError("Failed to Refresh Timer on Sign");
+			_logger.LogError("Failed to refresh timer on {kisokId}", _kioskId);
 		}
 
 		return success;
@@ -199,7 +203,7 @@ public class IPDisplaysApiClient
 		if (layout.layoutInfoXml.Contains("enabled=\"1\""))
 		{
 			// layout is already enabled, no need to do anything
-			_logger.LogTrace("{layoutName} is already enabled.", layoutName);
+			_logger.LogTrace("{layoutName} is already enabled on {kioskId}.", layoutName, _kioskId);
 			return true;
 		}
 		else
@@ -222,13 +226,13 @@ public class IPDisplaysApiClient
 		using var client = GetSoapClient();
 		try
 		{
+			_logger.LogDebug("Updating {name} to {value} on {kioskId}", name, value, _kioskId);
 			_ = await client.UpdateDataItemValueByNameAsync(name, value);
-			_logger.LogTrace("Updated {name} to {value}", name, value);
 			return true;
 		}
 		catch (Exception ex)
 		{
-			_logger.LogError(ex, "{name} Failed to Execute", nameof(UpdateDataItem));
+			_logger.LogError(ex, "{name} failed to execute on {kioskId}", nameof(UpdateDataItem), _kioskId);
 		}
 
 		return false;
@@ -244,7 +248,7 @@ public class IPDisplaysApiClient
 		using var client = GetSoapClient();
 
 		var xml = SerializeUpdateDataItemsXmlString(dataItems);
-
+		_logger.LogTrace("Updating {kioskId} data items: {xml}", _kioskId, xml);
 		_ = await client.UpdateDataItemValuesAsync(xml);
 
 		return true;
@@ -258,12 +262,12 @@ public class IPDisplaysApiClient
 
 		if (result.Result == 1)
 		{
-			_logger.LogTrace("Updated Sign Brightness to {brightness}", brightness);
+			_logger.LogDebug("Updated {kioskId} brightness to {brightness}", _kioskId, brightness);
 			return true;
 		}
 		else
 		{
-			_logger.LogError("Failed to Update Sign Brightness to {brightness}", brightness);
+			_logger.LogWarning("Failed to update {kioskId} brightness to {brightness}", _kioskId, brightness);
 			return false;
 		}
 	}

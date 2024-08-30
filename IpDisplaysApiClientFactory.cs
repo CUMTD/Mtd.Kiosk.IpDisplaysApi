@@ -17,8 +17,6 @@ public class IpDisplaysApiClientFactory
 		_logger = logger;
 	}
 
-	public IPDisplaysApiClient CreateClient(string ipAddress)
-	{
-		return new IPDisplaysApiClient(ipAddress, _config, _logger);
-	}
+	public IPDisplaysApiClient CreateClient(string kioskId, string ipAddress) =>
+		new(kioskId, ipAddress, _config, _logger);
 }
