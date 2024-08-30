@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Mtd.Kiosk.IpDisplaysApi.Models;
 using Mtd.Kiosk.LedUpdater.IpDisplaysApi;
+using Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
 using System.ComponentModel.DataAnnotations;
 using System.ServiceModel;
 using System.Xml;
@@ -44,7 +44,7 @@ public class IPDisplaysApiClient
 
 	#region Helpers
 
-	private SignSvrSoapPortClient GetSoapClient()
+	private SignSvrSoapPortClient? GetSoapClient()
 	{
 		var binding = new BasicHttpBinding
 		{
@@ -58,7 +58,16 @@ public class IPDisplaysApiClient
 			SendTimeout = _timeout
 		};
 		var endpointAddress = new EndpointAddress(_uri);
-		return new SignSvrSoapPortClient(binding, endpointAddress);
+		try
+		{
+			var client = new SignSvrSoapPortClient(binding, endpointAddress);
+			return client;
+		}
+		catch (Exception ex)
+		{
+			_logger.LogError(ex, "Failed to create SignSvrSoapPortClient for {kioskId}", _kioskId);
+			return null;
+		}
 	}
 
 	/// <summary>
@@ -151,7 +160,6 @@ public class IPDisplaysApiClient
 		}
 
 		// enable the target layout
-
 		var result = await client.SetLayoutStateAsync(layoutToEnable, 1);
 		_logger.LogTrace("Enabled {layoutToEnable} layout on sign.", layoutToEnable);
 
@@ -170,10 +178,28 @@ public class IPDisplaysApiClient
 	{
 		using var client = GetSoapClient();
 
-		// must be done in this order
-		var stop = await client.SendCommandAsync(STOP_TIMER, "Time_Since_Last_Update");
-		var set = await client.UpdateDataItemValueByNameAsync("Time_Since_Last_Update", DateTime.Now.ToString("M/d HH:mm:ss"));
-		var start = await client.SendCommandAsync(START_TIMER, "Time_Since_Last_Update");
+		if (client == null)
+		{
+			_logger.LogWarning("Failed to get client for {kioskId} in {method}", _kioskId, nameof(RefreshTimer));
+			return false;
+		}
+
+		var stop = new SendCommandResponse();
+		var set = new UpdateDataItemValueByNameResponse();
+		var start = new SendCommandResponse();
+
+		try
+		{
+			// must be done in this order
+			stop = await client.SendCommandAsync(STOP_TIMER, "Time_Since_Last_Update");
+			set = await client.UpdateDataItemValueByNameAsync("Time_Since_Last_Update", DateTime.Now.ToString("M/d HH:mm:ss"));
+			start = await client.SendCommandAsync(START_TIMER, "Time_Since_Last_Update");
+		}
+		catch (Exception ex)
+		{
+			_logger.LogError(ex, "Failed to refresh timer on {kioskId}", _kioskId);
+			return false;
+		}
 
 		var success = stop.Result == 1 && set.Result == 1 && start.Result == 1;
 
@@ -198,7 +224,23 @@ public class IPDisplaysApiClient
 	{
 		using var client = GetSoapClient();
 
-		var layout = await client.GetLayoutByNameAsync(new GetLayoutByNameRequest(layoutName, 0));
+		if (client == null)
+		{
+			_logger.LogWarning("Failed to get client for {kioskId} in {method}", _kioskId, nameof(EnsureLayoutEnabled));
+			return false;
+		}
+
+		var layout = new GetLayoutByNameResponse();
+
+		try
+		{
+			layout = await client.GetLayoutByNameAsync(new GetLayoutByNameRequest(layoutName, 0));
+		}
+		catch (Exception ex)
+		{
+			_logger.LogError(ex, "Failed to get layout {layoutName} on {kioskId}", layoutName, _kioskId);
+			return false;
+		}
 
 		if (layout.layoutInfoXml.Contains("enabled=\"1\""))
 		{
@@ -224,6 +266,13 @@ public class IPDisplaysApiClient
 	public async Task<bool> UpdateDataItem(string name, string value)
 	{
 		using var client = GetSoapClient();
+
+		if (client == null)
+		{
+			_logger.LogWarning("Failed to get client for {kioskId} in {method}", _kioskId, nameof(UpdateDataItem));
+			return false;
+		}
+
 		try
 		{
 			_logger.LogDebug("Updating {name} to {value} on {kioskId}", name, value, _kioskId);
@@ -247,9 +296,23 @@ public class IPDisplaysApiClient
 	{
 		using var client = GetSoapClient();
 
-		var xml = SerializeUpdateDataItemsXmlString(dataItems);
-		_logger.LogTrace("Updating {kioskId} data items: {xml}", _kioskId, xml);
-		_ = await client.UpdateDataItemValuesAsync(xml);
+		if (client == null)
+		{
+			_logger.LogWarning("Failed to get client for {kioskId} in {method}", _kioskId, nameof(UpdateDataItem));
+			return false;
+		}
+
+		try
+		{
+			var xml = SerializeUpdateDataItemsXmlString(dataItems);
+			_logger.LogTrace("Updating {kioskId} data items: {xml}", _kioskId, xml);
+			_ = await client.UpdateDataItemValuesAsync(xml);
+		}
+		catch (Exception ex)
+		{
+			_logger.LogError(ex, "Failed to update data items {dataItems} on {kioskId}", dataItems, _kioskId);
+			return false;
+		}
 
 		return true;
 	}
@@ -258,7 +321,23 @@ public class IPDisplaysApiClient
 	{
 		using var client = GetSoapClient();
 
-		var result = await client.SendCommandAsync(SET_DISPLAY_BRIGHTNESS, brightness.ToString());
+		if (client == null)
+		{
+			_logger.LogWarning("Failed to get client for {kioskId} in {method}", _kioskId, nameof(UpdateSignBrightness));
+			return false;
+		}
+
+		var result = new SendCommandResponse();
+
+		try
+		{
+			result = await client.SendCommandAsync(SET_DISPLAY_BRIGHTNESS, brightness.ToString());
+		}
+		catch (Exception ex)
+		{
+			_logger.LogError(ex, "Failed to update {kioskId} brightness to {brightness}", _kioskId, brightness);
+			return false;
+		}
 
 		if (result.Result == 1)
 		{
