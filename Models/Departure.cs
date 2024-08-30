@@ -9,5 +9,5 @@ public class Departure
 	[JsonPropertyName("time")]
 	public required string Time { get; set; }
 
-	public override string ToString() => $"{Route} at {Time}";
+	public override string ToString() => $"{Route} in {Time}";
 }
