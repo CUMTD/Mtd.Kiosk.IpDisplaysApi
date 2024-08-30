@@ -1,6 +1,6 @@
 using System.Text.Json.Serialization;
 
-namespace Mtd.Kiosk.LedUpdater.Realtime.Entitites;
+namespace Mtd.Kiosk.IpDisplaysApi.Models;
 
 public class Departure
 {
@@ -8,4 +8,6 @@ public class Departure
 	public required string Route { get; set; }
 	[JsonPropertyName("time")]
 	public required string Time { get; set; }
+
+	public override string ToString() => $"{Route} at {Time}";
 }
