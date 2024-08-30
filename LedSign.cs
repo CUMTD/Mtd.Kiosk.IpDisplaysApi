@@ -24,7 +24,7 @@ public class LedSign
 
 	public async Task<bool> UpdateSign(Departure topDeparture, Departure? bottomDeparture)
 	{
-		await _client.RefreshTimer();
+		await _client.RefreshTimer().ConfigureAwait(false);
 
 		var dataItems = new Dictionary<string, string>
 		{
@@ -34,9 +34,9 @@ public class LedSign
 			{ "Bottom_Right", bottomDeparture?.Time ?? string.Empty }
 		};
 
-		await _client.UpdateDataItems(dataItems);
+		await _client.UpdateDataItems(dataItems).ConfigureAwait(false);
 
-		var result = await _client.EnsureLayoutEnabled("TwoLineDepartures");
+		var result = await _client.EnsureLayoutEnabled("TwoLineDepartures").ConfigureAwait(false);
 
 		_logger.LogDebug("{kioskId} updated with TwoLineDepartures: '{topDeparture}' and '{bottomDeparture}'", _kioskId, topDeparture, bottomDeparture);
 
@@ -45,7 +45,7 @@ public class LedSign
 
 	public async Task<bool> UpdateSign(string topMessage, Departure? bottomDeparture)
 	{
-		await _client.RefreshTimer();
+		await _client.RefreshTimer().ConfigureAwait(false);
 
 		var dataItems = new Dictionary<string, string>
 		{
@@ -54,9 +54,9 @@ public class LedSign
 			{ "Bottom_Right", bottomDeparture?.Time ?? string.Empty }
 		};
 
-		await _client.UpdateDataItems(dataItems);
+		await _client.UpdateDataItems(dataItems).ConfigureAwait(false);
 
-		var result = await _client.EnsureLayoutEnabled("OneLineMessage");
+		var result = await _client.EnsureLayoutEnabled("OneLineMessage").ConfigureAwait(false);
 
 		_logger.LogDebug("{kioskId} updated with OneLineMessage: '{topMessage}' and departure: '{bottomDeparture}'", _kioskId, topMessage, bottomDeparture);
 
@@ -65,7 +65,7 @@ public class LedSign
 
 	public async Task<bool> UpdateSign(string topMessage, string bottomMessage)
 	{
-		await _client.RefreshTimer();
+		await _client.RefreshTimer().ConfigureAwait(false);
 
 		var dataItems = new Dictionary<string, string>
 		{
@@ -73,9 +73,9 @@ public class LedSign
 			{ "Bottom_Center", bottomMessage }
 		};
 
-		await _client.UpdateDataItems(dataItems);
+		await _client.UpdateDataItems(dataItems).ConfigureAwait(false);
 
-		var result = await _client.EnsureLayoutEnabled("TwoLineMessage");
+		var result = await _client.EnsureLayoutEnabled("TwoLineMessage").ConfigureAwait(false);
 
 		_logger.LogDebug("{kioskId} updated with TwoLineMessage: '{topMessage}' and '{bottomMessage}'", _kioskId, topMessage, bottomMessage);
 
@@ -84,7 +84,7 @@ public class LedSign
 
 	public async Task<bool> BlankScreen()
 	{
-		var result = await UpdateSign(string.Empty, string.Empty);
+		var result = await UpdateSign(string.Empty, string.Empty).ConfigureAwait(false);
 
 		_logger.LogInformation("{kioskId} blanked.", _kioskId);
 
@@ -93,7 +93,7 @@ public class LedSign
 
 	public async Task<bool> UpdateBrightness([Range(1, 127)] int newBrightness)
 	{
-		var result = await _client.UpdateSignBrightness(newBrightness);
+		var result = await _client.UpdateSignBrightness(newBrightness).ConfigureAwait(false);
 
 		_logger.LogInformation("{kioskId} brightness updated to {brightness}", _kioskId, newBrightness);
 

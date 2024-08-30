@@ -139,7 +139,7 @@ public class IPDisplaysApiClient
 	private async Task<bool> SetSingleLayoutAsync(SignSvrSoapPortClient client, string layoutToEnable)
 	{
 		// get all layouts on the sign
-		var layouts = await client.GetLayoutsAsync(new GetLayoutsRequest(0));
+		var layouts = await client.GetLayoutsAsync(new GetLayoutsRequest(0)).ConfigureAwait(false);
 
 		// deserialize into a GetLayoutsAsyncResponseXml object
 		var serializer = new XmlSerializer(typeof(GetLayoutsAsyncResponseXml));
@@ -155,13 +155,13 @@ public class IPDisplaysApiClient
 		{
 			if (layout.Enabled == "1")
 			{
-				_ = await client.SetLayoutStateAsync(layout.Name, 0);
+				_ = await client.SetLayoutStateAsync(layout.Name, 0).ConfigureAwait(false);
 				_logger.LogTrace("Disabled {layoutName} layout on sign.", layout.Name);
 			}
 		}
 
 		// enable the target layout
-		var result = await client.SetLayoutStateAsync(layoutToEnable, 1);
+		var result = await client.SetLayoutStateAsync(layoutToEnable, 1).ConfigureAwait(false);
 		_logger.LogTrace("Enabled {layoutToEnable} layout on sign.", layoutToEnable);
 
 		return true;
@@ -192,9 +192,9 @@ public class IPDisplaysApiClient
 		try
 		{
 			// must be done in this order
-			stop = await client.SendCommandAsync(STOP_TIMER, "Time_Since_Last_Update");
-			set = await client.UpdateDataItemValueByNameAsync("Time_Since_Last_Update", DateTime.Now.ToString("M/d HH:mm:ss"));
-			start = await client.SendCommandAsync(START_TIMER, "Time_Since_Last_Update");
+			stop = await client.SendCommandAsync(STOP_TIMER, "Time_Since_Last_Update").ConfigureAwait(false);
+			set = await client.UpdateDataItemValueByNameAsync("Time_Since_Last_Update", DateTime.Now.ToString("M/d HH:mm:ss")).ConfigureAwait(false);
+			start = await client.SendCommandAsync(START_TIMER, "Time_Since_Last_Update").ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
@@ -235,7 +235,7 @@ public class IPDisplaysApiClient
 
 		try
 		{
-			layout = await client.GetLayoutByNameAsync(new GetLayoutByNameRequest(layoutName, 0));
+			layout = await client.GetLayoutByNameAsync(new GetLayoutByNameRequest(layoutName, 0)).ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
@@ -251,7 +251,7 @@ public class IPDisplaysApiClient
 		}
 		else
 		{
-			var result = await SetSingleLayoutAsync(client, layoutName);
+			var result = await SetSingleLayoutAsync(client, layoutName).ConfigureAwait(false);
 		}
 
 		return true;
@@ -277,7 +277,7 @@ public class IPDisplaysApiClient
 		try
 		{
 			_logger.LogDebug("Updating {name} to {value} on {kioskId}", name, value, _kioskId);
-			_ = await client.UpdateDataItemValueByNameAsync(name, value);
+			_ = await client.UpdateDataItemValueByNameAsync(name, value).ConfigureAwait(false);
 			return true;
 		}
 		catch (Exception ex)
@@ -307,7 +307,7 @@ public class IPDisplaysApiClient
 		{
 			var xml = SerializeUpdateDataItemsXmlString(dataItems);
 			_logger.LogTrace("Updating {kioskId} data items: {xml}", _kioskId, xml);
-			_ = await client.UpdateDataItemValuesAsync(xml);
+			_ = await client.UpdateDataItemValuesAsync(xml).ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
@@ -332,7 +332,7 @@ public class IPDisplaysApiClient
 
 		try
 		{
-			result = await client.SendCommandAsync(SET_DISPLAY_BRIGHTNESS, brightness.ToString());
+			result = await client.SendCommandAsync(SET_DISPLAY_BRIGHTNESS, brightness.ToString()).ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
