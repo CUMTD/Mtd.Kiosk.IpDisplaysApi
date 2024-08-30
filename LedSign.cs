@@ -38,7 +38,7 @@ public class LedSign
 
 		var result = await _client.EnsureLayoutEnabled("TwoLineDepartures");
 
-		_logger.LogDebug("{kioskId} updated with TwoLineDepartures: {TopDeparture} and {BottomDeparture}", _kioskId, topDeparture, bottomDeparture);
+		_logger.LogDebug("{kioskId} updated with TwoLineDepartures: '{topDeparture}' and '{bottomDeparture}'", _kioskId, topDeparture, bottomDeparture);
 
 		return result;
 	}
@@ -58,7 +58,7 @@ public class LedSign
 
 		var result = await _client.EnsureLayoutEnabled("OneLineMessage");
 
-		_logger.LogDebug("{kioskId} updated with OneLineMessage: {TopMessage} and departure: {BottomDeparture}", _kioskId, topMessage, bottomDeparture);
+		_logger.LogDebug("{kioskId} updated with OneLineMessage: '{topMessage}' and departure: '{bottomDeparture}'", _kioskId, topMessage, bottomDeparture);
 
 		return result;
 	}
@@ -77,7 +77,7 @@ public class LedSign
 
 		var result = await _client.EnsureLayoutEnabled("TwoLineMessage");
 
-		_logger.LogDebug("{kioskId} updated with TwoLineMessage: {TopMessage} and {BottomMessage}", _kioskId, topMessage, bottomMessage);
+		_logger.LogDebug("{kioskId} updated with TwoLineMessage: '{topMessage}' and '{bottomMessage}'", _kioskId, topMessage, bottomMessage);
 
 		return result;
 	}
