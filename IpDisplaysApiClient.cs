@@ -1,7 +1,7 @@
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
+using Mtd.Kiosk.IpDisplaysApi.Models;
 using Mtd.Kiosk.LedUpdater.IpDisplaysApi;
-using Mtd.Kiosk.LedUpdater.IpDisplaysApi.Models;
 using System.ComponentModel.DataAnnotations;
 using System.ServiceModel;
 using System.Xml;
