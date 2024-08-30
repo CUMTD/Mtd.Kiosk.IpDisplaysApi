@@ -13,6 +13,7 @@ namespace Mtd.Kiosk.IpDisplaysApi;
 
 public class IPDisplaysApiClient
 {
+	private readonly string _ip;
 	private readonly string _kioskId;
 
 	private readonly Uri _uri;
@@ -27,14 +28,14 @@ public class IPDisplaysApiClient
 
 	#region Constructors
 
-	internal IPDisplaysApiClient(string kioskId, string ip, IOptions<IpDisplaysApiClientConfig> config, ILogger<IPDisplaysApiClient> logger)
+	internal IPDisplaysApiClient(string ip, string? kioskId, IOptions<IpDisplaysApiClientConfig> config, ILogger<IPDisplaysApiClient> logger)
 	{
-		ArgumentException.ThrowIfNullOrWhiteSpace(kioskId);
 		ArgumentException.ThrowIfNullOrWhiteSpace(ip);
 		ArgumentNullException.ThrowIfNull(config, nameof(config));
 		ArgumentNullException.ThrowIfNull(logger, nameof(logger));
 
-		_kioskId = kioskId;
+		_ip = ip;
+		_kioskId = kioskId ?? ip;
 		_uri = new Uri($"http://{ip}/soap1.wsdl");
 		_timeout = TimeSpan.FromMilliseconds(config.Value.TimeoutMiliseconds);
 		_logger = logger;
@@ -350,6 +351,35 @@ public class IPDisplaysApiClient
 			return false;
 		}
 	}
+
+	public async Task<Uri?> GetLedPreviewImageUri()
+	{
+		using var client = GetSoapClient();
+
+		if (client == null)
+		{
+			_logger.LogWarning("Failed to get client for {kioskId} in {method}", _kioskId, nameof(UpdateSignBrightness));
+			return null;
+		}
+
+		GetScreenSnapshotResponse response;
+		try
+		{
+			response = await client.GetScreenSnapshotAsync(new GetScreenSnapshotRequest());
+
+			//assemble the link to the image
+			var imageLink = $"http://{_ip}/{response.fileName.Replace("\\", "/")}";
+			_logger.LogDebug("Built image link for {kioskId}: {imageLink}", _kioskId, imageLink);
+			return new Uri(imageLink);
+
+		}
+		catch (Exception ex)
+		{
+			_logger.LogError(ex, "Failed to get screen snapshot for {kioskId}", _kioskId);
+			return null;
+		}
+	}
+
 	#endregion Api Methods
 
 }
