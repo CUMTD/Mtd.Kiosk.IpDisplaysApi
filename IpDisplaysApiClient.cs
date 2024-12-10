@@ -13,6 +13,7 @@ namespace Mtd.Kiosk.IpDisplaysApi;
 
 public class IPDisplaysApiClient
 {
+	private readonly string _ip;
 	private readonly string _kioskId;
 
 	private readonly Uri _uri;
@@ -27,14 +28,14 @@ public class IPDisplaysApiClient
 
 	#region Constructors
 
-	internal IPDisplaysApiClient(string kioskId, string ip, IOptions<IpDisplaysApiClientConfig> config, ILogger<IPDisplaysApiClient> logger)
+	internal IPDisplaysApiClient(string ip, string? kioskId, IOptions<IpDisplaysApiClientConfig> config, ILogger<IPDisplaysApiClient> logger)
 	{
-		ArgumentException.ThrowIfNullOrWhiteSpace(kioskId);
 		ArgumentException.ThrowIfNullOrWhiteSpace(ip);
 		ArgumentNullException.ThrowIfNull(config, nameof(config));
 		ArgumentNullException.ThrowIfNull(logger, nameof(logger));
 
-		_kioskId = kioskId;
+		_ip = ip;
+		_kioskId = kioskId ?? ip;
 		_uri = new Uri($"http://{ip}/soap1.wsdl");
 		_timeout = TimeSpan.FromMilliseconds(config.Value.TimeoutMiliseconds);
 		_logger = logger;
@@ -138,7 +139,7 @@ public class IPDisplaysApiClient
 	private async Task<bool> SetSingleLayoutAsync(SignSvrSoapPortClient client, string layoutToEnable)
 	{
 		// get all layouts on the sign
-		var layouts = await client.GetLayoutsAsync(new GetLayoutsRequest(0));
+		var layouts = await client.GetLayoutsAsync(new GetLayoutsRequest(0)).ConfigureAwait(false);
 
 		// deserialize into a GetLayoutsAsyncResponseXml object
 		var serializer = new XmlSerializer(typeof(GetLayoutsAsyncResponseXml));
@@ -154,13 +155,13 @@ public class IPDisplaysApiClient
 		{
 			if (layout.Enabled == "1")
 			{
-				_ = await client.SetLayoutStateAsync(layout.Name, 0);
+				_ = await client.SetLayoutStateAsync(layout.Name, 0).ConfigureAwait(false);
 				_logger.LogTrace("Disabled {layoutName} layout on sign.", layout.Name);
 			}
 		}
 
 		// enable the target layout
-		var result = await client.SetLayoutStateAsync(layoutToEnable, 1);
+		var result = await client.SetLayoutStateAsync(layoutToEnable, 1).ConfigureAwait(false);
 		_logger.LogTrace("Enabled {layoutToEnable} layout on sign.", layoutToEnable);
 
 		return true;
@@ -191,9 +192,9 @@ public class IPDisplaysApiClient
 		try
 		{
 			// must be done in this order
-			stop = await client.SendCommandAsync(STOP_TIMER, "Time_Since_Last_Update");
-			set = await client.UpdateDataItemValueByNameAsync("Time_Since_Last_Update", DateTime.Now.ToString("M/d HH:mm:ss"));
-			start = await client.SendCommandAsync(START_TIMER, "Time_Since_Last_Update");
+			stop = await client.SendCommandAsync(STOP_TIMER, "Time_Since_Last_Update").ConfigureAwait(false);
+			set = await client.UpdateDataItemValueByNameAsync("Time_Since_Last_Update", DateTime.Now.ToString("M/d HH:mm:ss")).ConfigureAwait(false);
+			start = await client.SendCommandAsync(START_TIMER, "Time_Since_Last_Update").ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
@@ -234,7 +235,7 @@ public class IPDisplaysApiClient
 
 		try
 		{
-			layout = await client.GetLayoutByNameAsync(new GetLayoutByNameRequest(layoutName, 0));
+			layout = await client.GetLayoutByNameAsync(new GetLayoutByNameRequest(layoutName, 0)).ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
@@ -250,7 +251,7 @@ public class IPDisplaysApiClient
 		}
 		else
 		{
-			var result = await SetSingleLayoutAsync(client, layoutName);
+			var result = await SetSingleLayoutAsync(client, layoutName).ConfigureAwait(false);
 		}
 
 		return true;
@@ -276,7 +277,7 @@ public class IPDisplaysApiClient
 		try
 		{
 			_logger.LogDebug("Updating {name} to {value} on {kioskId}", name, value, _kioskId);
-			_ = await client.UpdateDataItemValueByNameAsync(name, value);
+			_ = await client.UpdateDataItemValueByNameAsync(name, value).ConfigureAwait(false);
 			return true;
 		}
 		catch (Exception ex)
@@ -306,7 +307,7 @@ public class IPDisplaysApiClient
 		{
 			var xml = SerializeUpdateDataItemsXmlString(dataItems);
 			_logger.LogTrace("Updating {kioskId} data items: {xml}", _kioskId, xml);
-			_ = await client.UpdateDataItemValuesAsync(xml);
+			_ = await client.UpdateDataItemValuesAsync(xml).ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
@@ -331,7 +332,7 @@ public class IPDisplaysApiClient
 
 		try
 		{
-			result = await client.SendCommandAsync(SET_DISPLAY_BRIGHTNESS, brightness.ToString());
+			result = await client.SendCommandAsync(SET_DISPLAY_BRIGHTNESS, brightness.ToString()).ConfigureAwait(false);
 		}
 		catch (Exception ex)
 		{
@@ -350,6 +351,35 @@ public class IPDisplaysApiClient
 			return false;
 		}
 	}
+
+	public async Task<Uri?> GetLedPreviewImageUri()
+	{
+		using var client = GetSoapClient();
+
+		if (client == null)
+		{
+			_logger.LogWarning("Failed to get client for {kioskId} in {method}", _kioskId, nameof(UpdateSignBrightness));
+			return null;
+		}
+
+		GetScreenSnapshotResponse response;
+		try
+		{
+			response = await client.GetScreenSnapshotAsync(new GetScreenSnapshotRequest());
+
+			//assemble the link to the image
+			var imageLink = $"http://{_ip}/{response.fileName.Replace("\\", "/")}";
+			_logger.LogDebug("Built image link for {kioskId}: {imageLink}", _kioskId, imageLink);
+			return new Uri(imageLink);
+
+		}
+		catch (Exception ex)
+		{
+			_logger.LogError(ex, "Failed to get screen snapshot for {kioskId}", _kioskId);
+			return null;
+		}
+	}
+
 	#endregion Api Methods
 
 }
